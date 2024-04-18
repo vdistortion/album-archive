@@ -22,7 +22,17 @@ export class SongsPageComponent implements OnInit {
 
     const artist: TypeItem = this.artists[this.artistId];
     this.artistName = artist.artist.name;
-    this.songs = Object.values(artist.songs);
+    this.songs = Object.values(artist.songs).sort(
+      (a: TypeSong, b: TypeSong) => {
+        if (a.name[0] < b.name[0]) {
+          return -1;
+        }
+        if (a.name[0] > b.name[0]) {
+          return 1;
+        }
+        return 0;
+      },
+    );
   }
 
   ngOnInit(): void {
