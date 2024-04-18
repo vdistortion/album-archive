@@ -1,0 +1,16 @@
+<div class="home-page">
+  @if (artistName) {
+    <h2 class="home-page__name">
+      <a [routerLink]="'/artist/'+artistId">{{ artistName }}</a>
+    </h2>
+    <div class="home-page__wrap">
+      @for (song of songs; track song.id; let i = $index) {
+        <div class="home-page__item">
+          {{ i + 1 }}. <a [routerLink]="'/artist/'+artistId+'/song/'+song.id">
+          {{ song.name }}
+        </a>
+        </div>
+      }
+    </div>
+  }
+</div>
