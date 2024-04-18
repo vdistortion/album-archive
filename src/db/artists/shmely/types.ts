@@ -6,4 +6,5 @@ export const enum EnumAlbums {
 export const enum EnumSongs {
   planeta = 'planeta',
   poshmelye = 'poshmelye',
+  lightComeOut = 'light-come-out',
 }

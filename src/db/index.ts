@@ -1,16 +1,12 @@
+import master from './artists/master';
 import shmely from './artists/shmely';
-import { TypeItem } from './types';
+import { TypeArtist, TypeItems } from './types';
 
-console.log(parseArtist(shmely));
+const artists: TypeItems = {
+  [master.artist.id]: master,
+  [shmely.artist.id]: shmely,
+};
 
-export default [shmely];
+export default artists;
 
-function parseArtist({ artist, albums, songs }: TypeItem) {
-  const albumList = artist.albums.map((albumId) => {
-    const songsList = albums[albumId].songs.map((songId) => songs[songId]);
-
-    return { ...albums[albumId], songs: songsList };
-  });
-
-  return { ...artist, albums: albumList };
-}
+export const artistList: TypeArtist[] = [master.artist, shmely.artist];

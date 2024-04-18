@@ -1,4 +1,4 @@
-type TypeId = string | number;
+type TypeId = string;
 
 export type TypeArtist = {
   id: TypeId;
@@ -17,7 +17,7 @@ export type TypeAlbum = {
 };
 
 export type TypeAlbums = {
-  [key: string]: TypeAlbum;
+  [key: TypeId]: TypeAlbum;
 };
 
 export type TypeSong = {
@@ -28,7 +28,7 @@ export type TypeSong = {
 };
 
 export type TypeSongs = {
-  [key: string]: TypeSong;
+  [key: TypeId]: TypeSong;
 };
 
 export type TypeItem = {
@@ -37,6 +37,11 @@ export type TypeItem = {
   songs: TypeSongs;
 };
 
+export type TypeItems = {
+  [key: TypeId]: TypeItem;
+};
+
 export const enum EnumArtists {
-  shmely,
+  master = 'master',
+  shmely = 'shmely',
 }
