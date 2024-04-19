@@ -1,7 +1,9 @@
 export const enum EnumAlbums {
-  sideSleep = 'side-sleep',
+  poTuStoronuSna = 'po-tu-storonu-sna',
 }
 
 export const enum EnumSongs {
-  outside = 'outside',
+  zaGranyu = 'za-granyu',
+  naLiniiOgnya = 'na-linii-ognya',
+  rideToLiveLiveToRide = 'ride-to-live-live-to-ride',
 }

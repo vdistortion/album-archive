@@ -2,7 +2,7 @@ import { TypeSong } from '../../../types';
 import { EnumSongs } from '../types';
 
 const song: TypeSong = {
-  id: EnumSongs.lightComeOut,
+  id: EnumSongs.kakIzydetSvet,
   name: ['Как изыдет свет...'],
   albums: [],
   text: `

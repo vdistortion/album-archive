@@ -2,9 +2,10 @@ import { TypeSong } from '../../../types';
 import { EnumAlbums, EnumSongs } from '../types';
 
 const song: TypeSong = {
-  id: EnumSongs.planeta,
+  id: EnumSongs.naLadoniPlaneta,
   name: ['На ладони планета'],
-  albums: [EnumAlbums.spasms, EnumAlbums.poshmelye],
+  albums: [EnumAlbums.spazmyRoka, EnumAlbums.poshmelye],
+  authors: 'Шмель',
   text: `
 Мне поля красивые,
 Небеса огромные

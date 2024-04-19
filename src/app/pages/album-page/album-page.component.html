@@ -5,15 +5,18 @@
     </h2>
     <div class="home-page__wrap">
       <h3>{{ album?.name }} ({{ album?.year }})</h3>
-      @for (song of songs; track song.id; let i = $index) {
+      @for (song of songs; track (song.id || song.name); let i = $index) {
         <div class="home-page__item">
+          @if (song.id) {
           {{ i + 1 }}. <a [routerLink]="'/artist/'+artistId+'/song/'+song.id">
             {{ song.name }}
           </a>
+          } @else {
+            {{ i + 1 }}. {{ song.name }}
+          }
         </div>
       }
       @if (album?.info) {
-        <hr>
         <pre>{{ album?.info }}</pre>
       }
     </div>

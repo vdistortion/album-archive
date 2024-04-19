@@ -2,9 +2,10 @@ import { TypeSong } from '../../../types';
 import { EnumAlbums, EnumSongs } from '../types';
 
 const song: TypeSong = {
-  id: EnumSongs.outside,
+  id: EnumSongs.zaGranyu,
   name: ['За гранью'],
-  albums: [EnumAlbums.sideSleep],
+  albums: [EnumAlbums.poTuStoronuSna],
+  authors: 'Алексей Страйк — Маргарита Пушкина',
   text: `
 Научились молчать
 Те, кто раньше кричал,

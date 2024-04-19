@@ -2,10 +2,29 @@ import { TypeAlbum } from '../../../types';
 import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
-  id: EnumAlbums.sideSleep,
+  id: EnumAlbums.poTuStoronuSna,
   name: 'По ту сторону сна',
   year: 2006,
-  songs: [EnumSongs.outside],
+  songs: [
+    { name: 'Танец' },
+    { name: 'Гений рока' },
+    { name: 'Музыка сфер' },
+    EnumSongs.zaGranyu,
+    { name: 'Песня Аннушки' },
+    { name: 'Смерть Берлиоза' },
+    { name: 'Конферанс' },
+    { name: 'Мечтай' },
+    { name: 'Война (Live in studio)' },
+    { name: 'По ту сторону сна (часть 1)' },
+    { name: 'Лес Брокилон' },
+    { name: 'Крысы' },
+    { name: 'Сын камня' },
+    { name: 'Время варваров' },
+    { name: 'Live in studio' },
+    { name: 'Omut' },
+    { name: 'Мраморный Ангел' },
+    { name: 'По ту сторону сна (часть 2) (Live in studio)' },
+  ],
   info: `
 2006 год... Совместный проект Мастер+Margenta  это следующий шаг в эпоху тяжёлой культуры Российской сцены. Эксперименты со звуком и стилями увенчались успешным завершением работы  более чем в 1000 часов группы и всех участников проекта.
 

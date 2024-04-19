@@ -1,9 +1,13 @@
-import planeta from './planeta';
+import dajGarri from './daj-garri';
+import yaVselennaya from './ya-vselennaya';
+import naLadoniPlaneta from './na-ladoni-planeta';
 import poshmelye from './poshmelye';
-import lightComeOut from './lightComeOut';
+import kakIzydetSvet from './kak-izydet-svet';
 
 export default {
-  [planeta.id]: planeta,
+  [dajGarri.id]: dajGarri,
+  [yaVselennaya.id]: yaVselennaya,
+  [naLadoniPlaneta.id]: naLadoniPlaneta,
   [poshmelye.id]: poshmelye,
-  [lightComeOut.id]: lightComeOut,
+  [kakIzydetSvet.id]: kakIzydetSvet,
 };

@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.poshmelye,
   name: ['Пошмелье'],
   albums: [EnumAlbums.poshmelye],
+  authors: 'Стакан и Макс Экс - Макс Экс',
   text: `
 Материки движутся по шельфу
 В стране (?) проживают эльфы

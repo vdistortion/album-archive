@@ -15,7 +15,7 @@ export class AlbumPageComponent implements OnInit {
   public artistName: string = '';
   public artistId: string | null = null;
   public album: TypeAlbum | null = null;
-  public songs: TypeSong[] = [];
+  public songs: (TypeSong | { name: string; id: string })[] = [];
 
   constructor(private route: ActivatedRoute) {
     this.artistId = this.route.snapshot.paramMap.get('artist');
@@ -25,9 +25,11 @@ export class AlbumPageComponent implements OnInit {
     const artist: TypeItem = this.artists[this.artistId];
     this.artistName = artist.artist.name;
     this.album = artist.albums[albumId];
-    this.songs = this.album.songs.map((songId) => {
-      return artist.songs[songId];
-    });
+    this.songs = this.album.songs.map((songId) =>
+      typeof songId === 'string'
+        ? artist.songs[songId]
+        : { name: songId.name, id: '' },
+    );
   }
 
   ngOnInit(): void {

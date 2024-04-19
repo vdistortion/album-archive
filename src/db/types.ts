@@ -1,19 +1,28 @@
 type TypeId = string;
 
+export type TypeStreaming = {
+  spotify?: string;
+  youtube?: string;
+  youtubeMusic?: string;
+  yandexMusic?: string;
+};
+
 export type TypeArtist = {
   id: TypeId;
   name: string;
   albums: TypeId[];
+  streaming?: TypeStreaming;
 };
 
 export type TypeAlbum = {
   id: TypeId;
   name: string;
   year: number;
-  songs: TypeId[];
+  songs: (TypeId | { name: string })[];
   info?: string;
   folder?: string;
   order?: number;
+  streaming?: TypeStreaming;
 };
 
 export type TypeAlbums = {
@@ -25,6 +34,7 @@ export type TypeSong = {
   name: string[];
   albums: TypeId[];
   text: string;
+  authors?: string;
 };
 
 export type TypeSongs = {

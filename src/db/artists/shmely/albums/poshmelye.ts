@@ -5,7 +5,24 @@ const album: TypeAlbum = {
   id: EnumAlbums.poshmelye,
   name: 'Пошмелье',
   year: 2002,
-  songs: [EnumSongs.planeta, EnumSongs.poshmelye],
+  songs: [
+    EnumSongs.yaVselennaya,
+    { name: 'Ангелы в дверях' },
+    { name: 'Огонь - наш свет, огонь - наш след' },
+    EnumSongs.naLadoniPlaneta,
+    { name: 'Гроза' },
+    { name: 'Поле' },
+    EnumSongs.poshmelye,
+    { name: 'Клоун' },
+    { name: 'Путь к...' },
+    { name: 'Волосы' },
+    { name: 'Кронос' },
+    { name: 'Тень неизвестной звезды' },
+    { name: 'Скелеты' },
+    { name: 'Патологоанатом' },
+    { name: 'Новая религия' },
+    { name: 'Цветы' },
+  ],
   info: `
 "ПОШМЕЛЬЕ" - сборник (2002)
 Этот сборник песен Шмеля и Лёса с разными составами их группы "ШМЕЛИ".

@@ -1,5 +1,5 @@
-import sideSleep from './side-sleep';
+import poTuStoronuSna from './po-tu-storonu-sna';
 
 export default {
-  [sideSleep.id]: sideSleep,
+  [poTuStoronuSna.id]: poTuStoronuSna,
 };

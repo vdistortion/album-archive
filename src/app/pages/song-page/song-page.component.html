@@ -4,7 +4,10 @@
       <a [routerLink]="'/artist/'+artistId">{{ artistName }}</a>
     </h2>
     <div class="home-page__wrap">
-      <h3>{{ song?.name }}</h3>
+      <h3 style="margin-bottom: 0;">
+        {{ song?.name }}
+      </h3>
+      <small>{{ song?.authors }}</small>
       <pre>{{ song?.text }}</pre>
     </div>
 
