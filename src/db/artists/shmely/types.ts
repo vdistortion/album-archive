@@ -1,3 +1,8 @@
+export const enum EnumArtist {
+  id = 'shmely',
+  name = 'Шмели',
+}
+
 export const enum EnumAlbums {
   trotilovyyeSkazki = 'trotilovyye-skazki',
   tulovishche = 'tulovishche',
@@ -45,4 +50,5 @@ export const enum EnumSongs {
   naLadoniPlaneta = 'na-ladoni-planeta',
   poshmelye = 'poshmelye',
   kakIzydetSvet = 'kak-izydet-svet',
+  laboratoriyaAltruizma = 'laboratoriya-altruizma',
 }

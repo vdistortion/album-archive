@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.poshmelye,
   name: 'Пошмелье',
   year: 2002,
+  streaming: { yandexMusic: 'https://music.yandex.ru/album/79307' },
   songs: [
     EnumSongs.yaVselennaya,
     { name: 'Ангелы в дверях' },

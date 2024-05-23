@@ -1,10 +1,11 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.risunkiNaDushe,
   name: 'Рисунки на душе',
   year: 2001,
+  streaming: { yandexMusic: 'https://music.yandex.ru/album/79304' },
   songs: [
     { name: 'Intro' },
     { name: 'Скелеты' },
@@ -16,7 +17,7 @@ const album: TypeAlbum = {
     { name: 'Завтра на выписку' },
     { name: 'Туловищей' },
     { name: 'Клюквенный сок' },
-    { name: 'Лаборатория альтруизма' },
+    EnumSongs.laboratoriyaAltruizma,
     { name: 'Дайте света' },
     { name: 'Туловищей (remix)' },
     { name: 'Рисунки на душе' },

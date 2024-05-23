@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.ostanoviteChelovechestvo,
   name: 'Остановите человечество',
   year: 2003,
+  streaming: { yandexMusic: 'https://music.yandex.ru/album/79308' },
   songs: [
     { name: 'Аист над инкубатором' },
     { name: 'Я всё нарушил' },

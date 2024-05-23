@@ -19,6 +19,30 @@
       @if (album?.info) {
         <pre>{{ album?.info }}</pre>
       }
+      @if (album?.streaming) {
+        <ul>
+          @if (album?.streaming?.spotify) {
+            <li>
+              <a target="_blank" [href]="album?.streaming?.spotify">Spotify</a>
+            </li>
+          }
+          @if (album?.streaming?.youtubeMusic) {
+            <li>
+              <a target="_blank" [href]="album?.streaming?.youtubeMusic">YouTube Music</a>
+            </li>
+          }
+          @if (album?.streaming?.youtube) {
+            <li>
+              <a target="_blank" [href]="album?.streaming?.youtube">YouTube</a>
+            </li>
+          }
+          @if (album?.streaming?.yandexMusic) {
+            <li>
+              <a target="_blank" [href]="album?.streaming?.yandexMusic">Яндекс.Музыка</a>
+            </li>
+          }
+        </ul>
+      }
     </div>
   }
 </div>

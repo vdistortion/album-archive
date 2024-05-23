@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.pugovica,
   name: 'Пуговица',
   year: 2006,
+  streaming: { yandexMusic: 'https://music.yandex.ru/album/79314' },
   songs: [
     { name: 'Всё будет хорошо (intro)' },
     { name: 'Пуговица' },

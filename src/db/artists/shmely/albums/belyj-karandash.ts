@@ -5,6 +5,14 @@ const album: TypeAlbum = {
   id: EnumAlbums.belyjKarandash,
   name: 'Белый карандаш',
   year: 2014,
+  streaming: {
+    spotify: 'https://open.spotify.com/album/4BKbUBCtcHXI55rIgRK1N2',
+    youtube:
+      'https://www.youtube.com/playlist?list=OLAK5uy_me_kZEdgKM1vA9Z3ztRoX4z7PGpIzFXQo',
+    youtubeMusic:
+      'https://music.youtube.com/playlist?list=OLAK5uy_liI8wzWEd8L3cCk0h6iXOxEnakMSfvEz8',
+    yandexMusic: 'https://music.yandex.ru/album/3444125',
+  },
   songs: [
     { name: 'Сердце Бога' },
     { name: 'Белый карандаш' },

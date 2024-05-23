@@ -1,11 +1,11 @@
-import { TypeArtist, EnumArtists } from '../../types';
+import { TypeArtist } from '../../types';
 import albums from './albums';
 import songs from './songs';
-import { EnumAlbums } from './types';
+import { EnumAlbums, EnumArtist } from './types';
 
 const artist: TypeArtist = {
-  id: EnumArtists.shmely,
-  name: 'Шмели',
+  id: EnumArtist.id,
+  name: EnumArtist.name,
   streaming: {
     spotify: 'https://open.spotify.com/artist/4OXVjz9BARB2MwT6sdx8JE',
     youtube: 'https://www.youtube.com/channel/UCZkpG0pk3z1LondQYU_11Iw',

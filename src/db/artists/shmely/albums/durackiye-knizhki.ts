@@ -5,6 +5,14 @@ const album: TypeAlbum = {
   id: EnumAlbums.durackiyeKnizhki,
   name: 'Дурацкие книжки',
   year: 1998,
+  streaming: {
+    spotify: 'https://open.spotify.com/album/63sm3EX7I90qTqXEFBcUdT',
+    youtube:
+      'https://www.youtube.com/playlist?list=OLAK5uy_kgofi2TmxxKfzOrot5dsKipLqRNh1VjsE',
+    youtubeMusic:
+      'https://music.youtube.com/playlist?list=OLAK5uy_l16b-hVl6mCOISWOuLJWtDPH5uTbbBoG4',
+    yandexMusic: 'https://music.yandex.ru/album/3444884',
+  },
   songs: [
     {
       name: 'Я не ангел',

@@ -3,6 +3,7 @@ import yaVselennaya from './ya-vselennaya';
 import naLadoniPlaneta from './na-ladoni-planeta';
 import poshmelye from './poshmelye';
 import kakIzydetSvet from './kak-izydet-svet';
+import laboratoriyaAltruizma from './laboratoriya-altruizma';
 
 export default {
   [dajGarri.id]: dajGarri,
@@ -10,4 +11,5 @@ export default {
   [naLadoniPlaneta.id]: naLadoniPlaneta,
   [poshmelye.id]: poshmelye,
   [kakIzydetSvet.id]: kakIzydetSvet,
+  [laboratoriyaAltruizma.id]: laboratoriyaAltruizma,
 };

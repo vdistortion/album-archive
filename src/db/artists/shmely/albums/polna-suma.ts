@@ -1,10 +1,11 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.polnaSuma,
   name: 'Полна сума',
   year: 2003,
+  streaming: { yandexMusic: 'https://music.yandex.ru/album/79309' },
   songs: [
     { name: 'Зверь' },
     { name: 'Я обернусь огнём' },
@@ -12,7 +13,7 @@ const album: TypeAlbum = {
     { name: 'Агония' },
     { name: 'Клякса' },
     { name: 'Полна сума' },
-    { name: 'Лаборатория альтруизма' },
+    EnumSongs.laboratoriyaAltruizma,
     { name: 'Вода' },
     { name: 'Садизм' },
     { name: 'Радиактивные отходы' },

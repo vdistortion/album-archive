@@ -1,15 +1,23 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.moshchi,
   name: 'Мощи',
   year: 2000,
+  streaming: {
+    spotify: 'https://open.spotify.com/album/1xaIDZcBZLaXtnrsfg1Tbr',
+    youtube:
+      'https://www.youtube.com/playlist?list=OLAK5uy_mcpRAnZyTiyTLoYoZlOifD4WoKEopi6vs',
+    youtubeMusic:
+      'https://music.youtube.com/playlist?list=OLAK5uy_mGUbrFjlAsspY8eHWwTpWm_7DAB7C5J1s',
+    yandexMusic: 'https://music.yandex.ru/album/3444130',
+  },
   songs: [
     { name: 'Крыша горит' },
     { name: 'Сизоблюдов' },
     { name: 'Эпидемия Ха' },
-    { name: 'Лаборатория альтруизма' },
+    EnumSongs.laboratoriyaAltruizma,
     { name: 'Иволга' },
     { name: 'Проститутка-вампир' },
     { name: 'В мясном цеху праздник души' },

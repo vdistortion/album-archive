@@ -5,6 +5,14 @@ const album: TypeAlbum = {
   id: EnumAlbums.chudes16,
   name: '16 чудес',
   year: 2016,
+  streaming: {
+    spotify: 'https://open.spotify.com/album/20RNbLgkaoqnmqM6aZ5ppb',
+    youtube:
+      'https://www.youtube.com/playlist?list=OLAK5uy_k5j2ONFgCxjaMibPrmWT_7cqOZpokpY0A',
+    youtubeMusic:
+      'https://music.youtube.com/playlist?list=OLAK5uy_lvl4Bi2EQ2Cr_pT1KK0COoNLGwDAHRHUE',
+    yandexMusic: 'https://music.yandex.ru/album/4090274',
+  },
   songs: [
     { name: 'Шукай' },
     { name: 'Душа не ладит с сердцем' },

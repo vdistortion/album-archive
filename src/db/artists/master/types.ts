@@ -1,3 +1,8 @@
+export const enum EnumArtist {
+  id = 'master',
+  name = 'Мастер',
+}
+
 export const enum EnumAlbums {
   poTuStoronuSna = 'po-tu-storonu-sna',
 }

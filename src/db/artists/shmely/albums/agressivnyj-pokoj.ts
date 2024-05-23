@@ -1,10 +1,11 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.agressivnyjPokoj,
   name: 'Агрессивный покой',
   year: 2002,
+  streaming: { yandexMusic: 'https://music.yandex.ru/album/79305' },
   songs: [
     { name: 'Боль' },
     { name: 'Ты снег в моей преисподней' },
@@ -15,7 +16,7 @@ const album: TypeAlbum = {
     { name: 'Искушение (1999)' },
     { name: 'Благодать' },
     { name: 'Манекен' },
-    { name: 'Лаборатория альтруизма (new version)' },
+    EnumSongs.laboratoriyaAltruizma,
     { name: 'День Святого Валентина' },
     { name: 'Отравленные боги' },
     { name: 'Слёзная (remix)' },

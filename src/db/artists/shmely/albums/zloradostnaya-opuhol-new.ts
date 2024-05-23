@@ -5,6 +5,14 @@ const album: TypeAlbum = {
   id: EnumAlbums.zloradostnayaOpuholNew,
   name: 'Злорадостная опухоль. Переиздание',
   year: 2016,
+  streaming: {
+    spotify: 'https://open.spotify.com/album/4Q4riSrf2rdfmY6EllfbRp',
+    youtube:
+      'https://www.youtube.com/playlist?list=OLAK5uy_kf4b67Cf_KzFSmA1Ya-ptvWjGMmG9rfWs',
+    youtubeMusic:
+      'https://music.youtube.com/playlist?list=OLAK5uy_lEU8oxwMxMRJ8Qm8pCykRlxwEBZBbYlK0',
+    yandexMusic: 'https://music.yandex.ru/album/3444126',
+  },
   songs: [
     { name: 'Были мы' },
     { name: 'Лезвие' },

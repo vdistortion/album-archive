@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.negativProstranstva,
   name: 'Негатив пространства',
   year: 2002,
+  streaming: { yandexMusic: 'https://music.yandex.ru/album/79306' },
   songs: [
     { name: 'Реаниматор' },
     { name: 'Вера и любовь' },

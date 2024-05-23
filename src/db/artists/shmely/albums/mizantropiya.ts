@@ -5,6 +5,14 @@ const album: TypeAlbum = {
   id: EnumAlbums.mizantropiya,
   name: 'Мизантропия',
   year: 2016,
+  streaming: {
+    spotify: 'https://open.spotify.com/album/5fyLR7SyykWK1EmVKesNNK',
+    youtube:
+      'https://www.youtube.com/playlist?list=OLAK5uy_ni5xNthJBzgd9MZ63IBNDGsWa0rtcuJA0',
+    youtubeMusic:
+      'https://music.youtube.com/playlist?list=OLAK5uy_ly9XGbpMjncfPi2jDs8Kyq9bm47Iiezuc',
+    yandexMusic: 'https://music.yandex.ru/album/4184010',
+  },
   songs: [
     { name: 'Летальные потехи' },
     { name: 'Хотив спитати' },

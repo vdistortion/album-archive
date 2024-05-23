@@ -50,8 +50,3 @@ export type TypeItem = {
 export type TypeItems = {
   [key: TypeId]: TypeItem;
 };
-
-export const enum EnumArtists {
-  master = 'master',
-  shmely = 'shmely',
-}
