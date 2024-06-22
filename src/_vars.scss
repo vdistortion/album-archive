@@ -1,0 +1,7 @@
+:root {
+  --bg-image: url('/artist/master/bg.jpg');
+}
+
+body.production {
+  --bg-image: url('/album-archive/artist/master/bg.jpg');
+}

@@ -73,6 +73,12 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ],
               "sourceMap": true
             }
           },
@@ -92,6 +98,13 @@
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/album-archive/",
+            "repo": "https://github.com/astrotrain55/album-archive.git"
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
