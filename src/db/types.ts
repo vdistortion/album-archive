@@ -1,11 +1,8 @@
 type TypeId = string;
 
-export type TypeStreaming = {
-  spotify?: string;
-  youtube?: string;
-  youtubeMusic?: string;
-  yandexMusic?: string;
-};
+type TypeStreamingList = 'spotify' | 'youtube' | 'youtubeMusic' | 'yandexMusic';
+
+export type TypeStreaming = Partial<Record<TypeStreamingList, string>>;
 
 export type TypeArtist = {
   id: TypeId;
@@ -25,9 +22,7 @@ export type TypeAlbum = {
   streaming?: TypeStreaming;
 };
 
-export type TypeAlbums = {
-  [key: TypeId]: TypeAlbum;
-};
+export type TypeAlbums = Record<TypeId, TypeAlbum>;
 
 export type TypeSong = {
   id: TypeId;
@@ -37,9 +32,7 @@ export type TypeSong = {
   authors?: string;
 };
 
-export type TypeSongs = {
-  [key: TypeId]: TypeSong;
-};
+export type TypeSongs = Record<TypeId, TypeSong>;
 
 export type TypeItem = {
   artist: TypeArtist;
@@ -47,6 +40,4 @@ export type TypeItem = {
   songs: TypeSongs;
 };
 
-export type TypeItems = {
-  [key: TypeId]: TypeItem;
-};
+export type TypeItems = Record<TypeId, TypeItem>;
