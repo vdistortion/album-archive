@@ -1,16 +1,17 @@
 <div class="home-page">
   @if (artistName) {
     <h2 class="home-page__name">
-      <a [routerLink]="'/artist/'+artistId">{{ artistName }}</a>
+      <a [routerLink]="'/artist/' + artistId">{{ artistName }}</a>
     </h2>
     <div class="home-page__wrap">
       <h3>{{ album?.name }} ({{ album?.year }})</h3>
-      @for (song of songs; track (song.id || song.name); let i = $index) {
+      @for (song of songs; track song.id || song.name; let i = $index) {
         <div class="home-page__item">
           @if (song.id) {
-          {{ i + 1 }}. <a [routerLink]="'/artist/'+artistId+'/song/'+song.id">
-            {{ song.name }}
-          </a>
+            {{ i + 1 }}.
+            <a [routerLink]="'/artist/' + artistId + '/song/' + song.id">
+              {{ song.name }}
+            </a>
           } @else {
             {{ i + 1 }}. {{ song.name }}
           }
@@ -28,7 +29,9 @@
           }
           @if (album?.streaming?.youtubeMusic) {
             <li>
-              <a target="_blank" [href]="album?.streaming?.youtubeMusic">YouTube Music</a>
+              <a target="_blank" [href]="album?.streaming?.youtubeMusic"
+                >YouTube Music</a
+              >
             </li>
           }
           @if (album?.streaming?.youtube) {
@@ -38,7 +41,9 @@
           }
           @if (album?.streaming?.yandexMusic) {
             <li>
-              <a target="_blank" [href]="album?.streaming?.yandexMusic">Яндекс.Музыка</a>
+              <a target="_blank" [href]="album?.streaming?.yandexMusic"
+                >Яндекс.Музыка</a
+              >
             </li>
           }
         </ul>

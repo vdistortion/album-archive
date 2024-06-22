@@ -8,18 +8,21 @@
             <a [routerLink]="album.id">
               {{ album.name }}
             </a>
-          </span> ({{ album.year }})
+          </span>
+          ({{ album.year }})
         </div>
       }
       <div class="home-page__item">
-          <span>
-            <a [routerLink]="'/artist/'+artistId+'/songs/other'">Песни, не вошедшие в альбомы</a>
-          </span>
+        <span>
+          <a [routerLink]="'/artist/' + artistId + '/songs/other'"
+            >Песни, не вошедшие в альбомы</a
+          >
+        </span>
       </div>
       <div class="home-page__item">
-          <span>
-            <a [routerLink]="'/artist/'+artistId+'/songs'">Все песни</a>
-          </span>
+        <span>
+          <a [routerLink]="'/artist/' + artistId + '/songs'">Все песни</a>
+        </span>
       </div>
     </div>
     @if (streaming) {

@@ -1,10 +1,10 @@
 <div class="home-page">
   @if (artistName) {
     <h2 class="home-page__name">
-      <a [routerLink]="'/artist/'+artistId">{{ artistName }}</a>
+      <a [routerLink]="'/artist/' + artistId">{{ artistName }}</a>
     </h2>
     <div class="home-page__wrap">
-      <h3 style="margin-bottom: 0;">
+      <h3 style="margin-bottom: 0">
         {{ song?.name }}
       </h3>
       <small>{{ song?.authors }}</small>
@@ -17,16 +17,17 @@
           <div class="home-page__item">
             <strong>
               <span>
-                <a [routerLink]="'/artist/'+artistId+'/'+album.id">
+                <a [routerLink]="'/artist/' + artistId + '/' + album.id">
                   {{ album.name }}
                 </a>
-              </span> ({{ album.year }})
+              </span>
+              ({{ album.year }})
             </strong>
           </div>
         }
       } @else {
         <div class="home-page__item">
-          <a [routerLink]="'/artist/'+artistId+'/songs/other'">
+          <a [routerLink]="'/artist/' + artistId + '/songs/other'">
             Песни, не вошедшие в альбомы
           </a>
         </div>

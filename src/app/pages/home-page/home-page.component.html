@@ -2,7 +2,7 @@
   <div class="home-page__row">
     @for (artist of artists; track artist.id) {
       <div class="home-page__item">
-        <a [routerLink]="'artist/'+artist.id">
+        <a [routerLink]="'artist/' + artist.id">
           {{ artist.name }}
         </a>
       </div>
