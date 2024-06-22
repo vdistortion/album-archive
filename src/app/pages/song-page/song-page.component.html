@@ -16,12 +16,12 @@
         @for (album of albums; track album.id) {
           <div class="home-page__item">
             <strong>
+              {{ album.year }} —
               <span>
                 <a [routerLink]="'/artist/' + artistId + '/' + album.id">
                   {{ album.name }}
                 </a>
               </span>
-              ({{ album.year }})
             </strong>
           </div>
         }

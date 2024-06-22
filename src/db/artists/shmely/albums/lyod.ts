@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.lyod,
   name: 'Лёд',
   year: 2005,
+  folder: '/artist/shmely/albums/2005_lyod.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/5pL8KLhjDalWkja1X7dKz9',
     youtube:

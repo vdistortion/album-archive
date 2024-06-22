@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { AlbumCardComponent } from '../../components/ui/album-card/album-card.component';
 import artists from '../../../db';
 import {
   TypeAlbum,
@@ -11,7 +12,7 @@ import {
 @Component({
   selector: 'app-artist-page',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, AlbumCardComponent],
   templateUrl: './artist-page.component.html',
   styleUrl: './artist-page.component.scss',
 })

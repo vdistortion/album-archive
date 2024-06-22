@@ -4,6 +4,9 @@
       <a [routerLink]="'/artist/' + artistId">{{ artistName }}</a>
     </h2>
     <div class="home-page__wrap">
+      @if (album && album.folder) {
+        <img [src]="album.folder" [alt]="album.name" style="float: right" />
+      }
       <h3>{{ album?.name }} ({{ album?.year }})</h3>
       @for (song of songs; track song.id || song.name; let i = $index) {
         <div class="home-page__item">

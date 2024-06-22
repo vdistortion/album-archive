@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.durackiyeKnizhki,
   name: 'Дурацкие книжки',
   year: 1998,
+  folder: '/artist/shmely/albums/1998_knizhki.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/63sm3EX7I90qTqXEFBcUdT',
     youtube:

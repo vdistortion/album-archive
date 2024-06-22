@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.tenSerdca,
   name: 'Тень сердца',
   year: 2004,
+  folder: '/artist/shmely/albums/2004_ten.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/7fsVsr0pCmCEpyQ9o2jMXW',
     youtube:

@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.poTuStoronuSna,
   name: 'По ту сторону сна',
   year: 2006,
+  folder: '/artist/master/albums/ptcc_2006.jpg',
   songs: [
     { name: 'Танец' },
     { name: 'Гений рока' },

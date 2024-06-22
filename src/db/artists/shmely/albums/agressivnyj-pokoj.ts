@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.agressivnyjPokoj,
   name: 'Агрессивный покой',
   year: 2002,
+  folder: '/artist/shmely/albums/2002_pokoy.jpg',
   streaming: { yandexMusic: 'https://music.yandex.ru/album/79305' },
   songs: [
     { name: 'Боль' },

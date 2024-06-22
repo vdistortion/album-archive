@@ -1,29 +1,30 @@
 <div class="home-page">
   @if (artistName) {
-    <h2 class="home-page__name">{{ artistName }}</h2>
-    <div class="home-page__wrap">
+    <h2 class="home-page__name">
+      <a routerLink="">
+        {{ artistName }}
+      </a>
+    </h2>
+    <div class="home-page__wrap rows">
       @for (album of albums; track album.id) {
-        <div class="home-page__item">
-          <span>
-            <a [routerLink]="album.id">
-              {{ album.name }}
-            </a>
-          </span>
-          ({{ album.year }})
-        </div>
+        <app-album-card
+          class="col"
+          [link]="album.id"
+          [name]="album.name"
+          [year]="album.year"
+          [image]="album.folder"
+        ></app-album-card>
       }
-      <div class="home-page__item">
-        <span>
-          <a [routerLink]="'/artist/' + artistId + '/songs/other'"
-            >Песни, не вошедшие в альбомы</a
-          >
-        </span>
-      </div>
-      <div class="home-page__item">
-        <span>
-          <a [routerLink]="'/artist/' + artistId + '/songs'">Все песни</a>
-        </span>
-      </div>
+      <app-album-card
+        class="col"
+        [link]="'/artist/' + artistId + '/songs/other'"
+        [name]="'Песни, не вошедшие в альбомы'"
+      ></app-album-card>
+      <app-album-card
+        class="col"
+        [link]="'/artist/' + artistId + '/songs'"
+        [name]="'Все песни'"
+      ></app-album-card>
     </div>
     @if (streaming) {
       <ul>

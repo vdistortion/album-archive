@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.negativProstranstva,
   name: 'Негатив пространства',
   year: 2002,
+  folder: '/artist/shmely/albums/2002_negativ.jpg',
   streaming: { yandexMusic: 'https://music.yandex.ru/album/79306' },
   songs: [
     { name: 'Реаниматор' },
