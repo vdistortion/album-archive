@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.risunkiNaDushe,
   name: 'Рисунки на душе',
   year: 2001,
+  folder: '/artist/shmely/albums/2001_risunki.jpg',
   streaming: { yandexMusic: 'https://music.yandex.ru/album/79304' },
   songs: [
     { name: 'Intro' },

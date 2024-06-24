@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.bombaVUbezhishche,
   name: 'Бомба в убежище',
   year: 2000,
+  folder: '/artist/shmely/albums/2000_bomba.jpg',
   songs: [
     { name: 'Агония' },
     { name: 'Тишина и покой' },

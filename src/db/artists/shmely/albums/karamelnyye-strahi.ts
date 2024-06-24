@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.karamelnyyeStrahi,
   name: 'Карамельные страхи',
   year: 2008,
+  folder: '/artist/shmely/albums/2008_strahi.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/7biUa81AdYs3MZ44VKMJXr',
     youtube:

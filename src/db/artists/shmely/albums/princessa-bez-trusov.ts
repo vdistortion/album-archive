@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.princessaBezTrusov,
   name: 'Принцесса без трусов',
   year: 2000,
+  folder: '/artist/shmely/albums/2000_prinzessa.jpg',
   songs: [
     { name: 'Принцесса без трусов' },
     { name: 'Извращение и разврат' },

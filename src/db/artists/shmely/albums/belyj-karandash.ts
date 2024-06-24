@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.belyjKarandash,
   name: 'Белый карандаш',
   year: 2014,
+  folder: '/artist/shmely/albums/2014_karandash.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/4BKbUBCtcHXI55rIgRK1N2',
     youtube:

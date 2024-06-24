@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.paraTrupov,
   name: 'Пара трупов',
   year: 2013,
+  folder: '/artist/shmely/albums/2013_para.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/6AfviE2K704Bym6YNCdMMk',
     youtube:

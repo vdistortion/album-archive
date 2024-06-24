@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.organizm,
   name: 'Организм',
   year: 2000,
+  folder: '/artist/shmely/albums/2000_organizm.jpg',
   songs: [
     EnumSongs.polnaSuma,
     { name: 'Организм' },

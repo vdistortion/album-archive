@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.mizantropiya,
   name: 'Мизантропия',
   year: 2016,
+  folder: '/artist/shmely/albums/2016_mizantropiya.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/5fyLR7SyykWK1EmVKesNNK',
     youtube:

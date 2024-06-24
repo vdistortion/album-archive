@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.chudes16,
   name: '16 чудес',
   year: 2016,
+  folder: '/artist/shmely/albums/2016_16.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/20RNbLgkaoqnmqM6aZ5ppb',
     youtube:

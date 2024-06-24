@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.mekhanicheskayaBalerina,
   name: 'Механическая балерина',
   year: 2010,
+  folder: '/artist/shmely/albums/2010_balerina.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/0AoYg8ddVNIoismWBYv7jp',
     youtube:

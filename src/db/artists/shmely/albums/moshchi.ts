@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.moshchi,
   name: 'Мощи',
   year: 2000,
+  folder: '/artist/shmely/albums/2000_moshi.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/1xaIDZcBZLaXtnrsfg1Tbr',
     youtube:

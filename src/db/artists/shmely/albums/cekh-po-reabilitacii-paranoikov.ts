@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.cekhPoReabilitaciiParanoikov,
   name: 'Цех по реабилитации параноиков',
   year: 2011,
+  folder: '/artist/shmely/albums/2010_crp.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/74KcaQJrAjhzeHvW6rZUIQ',
     youtube:

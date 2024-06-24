@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.tulovishche,
   name: 'Туловище',
   year: 1998,
+  folder: '/artist/shmely/albums/1998_tulovishe.jpg',
   songs: [
     {
       name: 'Небо (стих)',

@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.moskovskayaYarmarkaUdovolstvij,
   name: 'Московская ярмарка удовольствий',
   year: 2009,
+  folder: '/artist/shmely/albums/2009_myau.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/0wzOwUeEa3fVPI77pJRK8E',
     youtube:

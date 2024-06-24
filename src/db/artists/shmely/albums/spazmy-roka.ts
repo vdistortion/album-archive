@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.spazmyRoka,
   name: 'Спазмы рока',
   year: 2001,
+  folder: '/artist/shmely/albums/2001_spazmi.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/28tVBP8rDTC3eLMVzOAZ5m',
     youtube:

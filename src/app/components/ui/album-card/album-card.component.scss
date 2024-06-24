@@ -18,12 +18,13 @@
 
   &__img {
     margin: auto;
-    object-fit: cover;
-    object-position: top;
+    object-fit: contain;
+    object-position: center;
     height: 100%;
     width: 0;
     min-width: 100%;
     min-height: 100%;
+    aspect-ratio: 1;
   }
 
   &__name {

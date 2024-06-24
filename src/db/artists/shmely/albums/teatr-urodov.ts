@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.teatrUrodov,
   name: 'Театр уродов',
   year: 2011,
+  folder: '/artist/shmely/albums/2011_teatr.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/40ou3ofmt60WN6Z1LXpF0p',
     youtube:

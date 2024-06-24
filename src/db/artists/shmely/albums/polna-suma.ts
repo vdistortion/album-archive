@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.polnaSuma,
   name: 'Полна сума',
   year: 2003,
+  folder: '/artist/shmely/albums/2003_suma.jpg',
   streaming: { yandexMusic: 'https://music.yandex.ru/album/79309' },
   songs: [
     { name: 'Зверь' },

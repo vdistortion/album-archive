@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.trahniNebo,
   name: 'Трахни небо',
   year: 2000,
+  folder: '/artist/shmely/albums/2000_nebo.jpg',
   songs: [
     { name: 'Лай иллюзии' },
     { name: 'Вьюга' },

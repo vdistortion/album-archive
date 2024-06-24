@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.koshkinyObidy,
   name: 'Кошкины обиды',
   year: 2007,
+  folder: '/artist/shmely/albums/2007_obidy.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/4GUxH5Jfgjt8as9HOTgert',
     youtube:
