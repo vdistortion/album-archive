@@ -12,7 +12,7 @@ const album: TypeAlbum = {
     { name: 'Тоска' },
     { name: 'Агония' },
     { name: 'Клякса' },
-    { name: 'Полна сума' },
+    EnumSongs.polnaSuma,
     EnumSongs.laboratoriyaAltruizma,
     { name: 'Вода' },
     { name: 'Садизм' },

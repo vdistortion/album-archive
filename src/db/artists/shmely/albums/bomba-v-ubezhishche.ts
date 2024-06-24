@@ -1,5 +1,5 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.bombaVUbezhishche,
@@ -9,17 +9,17 @@ const album: TypeAlbum = {
     { name: 'Агония' },
     { name: 'Тишина и покой' },
     { name: 'Бом лбом' },
-    { name: 'Безлюдный остров' },
+    EnumSongs.polnaSuma,
     { name: 'Туляремия' },
     { name: 'Вирус' },
-    { name: 'Я не ангел' },
+    EnumSongs.yaNeAngel,
     { name: 'Вихрь страстей' },
     { name: 'Садизм' },
     { name: 'Хули пули праху' },
     { name: 'Трупные пятна' },
     { name: 'Анаконда' },
     { name: 'Борода' },
-    { name: 'Слёзная' },
+    EnumSongs.slyoznaya,
     { name: 'Новый год' },
     { name: 'Язва на душе' },
     { name: 'Zастольная' },

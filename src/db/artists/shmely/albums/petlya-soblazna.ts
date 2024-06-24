@@ -1,5 +1,5 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.petlyaSoblazna,
@@ -33,12 +33,8 @@ const album: TypeAlbum = {
     {
       name: 'Бiсов гай',
     },
-    {
-      name: 'Трахни небо',
-    },
-    {
-      name: 'Дiвчина-куля',
-    },
+    EnumSongs.trahniNebo,
+    EnumSongs.divchinaKulya,
     {
       name: 'Завiтай',
     },

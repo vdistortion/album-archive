@@ -1,5 +1,5 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.pugovica,
@@ -7,21 +7,21 @@ const album: TypeAlbum = {
   year: 2006,
   streaming: { yandexMusic: 'https://music.yandex.ru/album/79314' },
   songs: [
-    { name: 'Всё будет хорошо (intro)' },
+    EnumSongs.intro,
     { name: 'Пуговица' },
     { name: 'Ангел 13' },
     { name: 'Стриптиз интеллекта' },
     { name: 'Женщина-драматургия' },
     { name: 'Мегаполис' },
-    { name: 'Гильотина в цветах' },
-    { name: 'Зверь' },
-    { name: 'Ренессанс' },
-    { name: 'Антиромантика' },
+    EnumSongs.gilotina,
+    EnumSongs.zver,
+    EnumSongs.renessans,
+    EnumSongs.antiromantika,
     { name: 'Ходит чёрная королева' },
     { name: 'Вальс влюблённых волн' },
     { name: 'Катёнка' },
     { name: 'Мир - комедия' },
-    { name: 'Судороги живых болот' },
+    EnumSongs.sudorogi,
   ],
 };
 

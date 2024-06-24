@@ -1,5 +1,5 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.durackiyeKnizhki,
@@ -15,15 +15,11 @@ const album: TypeAlbum = {
     yandexMusic: 'https://music.yandex.ru/album/3444884',
   },
   songs: [
-    {
-      name: 'Я не ангел',
-    },
+    EnumSongs.yaNeAngel,
     {
       name: 'Могильщик',
     },
-    {
-      name: 'Волосы',
-    },
+    EnumSongs.volosy,
     {
       name: 'Жрать подано',
     },

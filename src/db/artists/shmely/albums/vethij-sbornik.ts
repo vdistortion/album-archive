@@ -1,5 +1,5 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.vethijSbornik,
@@ -23,7 +23,7 @@ const album: TypeAlbum = {
     { name: 'Спазмы рока' },
     { name: 'Завiтай' },
     { name: 'Обессиленный прах' },
-    { name: 'Сапрофаг' },
+    EnumSongs.saprofag,
   ],
 };
 
