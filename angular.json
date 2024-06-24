@@ -103,7 +103,7 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "baseHref": "/album-archive/",
-            "repo": "https://github.com/astrotrain55/album-archive.git"
+            "repo": "git@github.com:astrotrain55/album-archive.git"
           }
         },
         "test": {
