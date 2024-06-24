@@ -1,19 +1,19 @@
-<div class="home-page">
+<div class="album-page">
   @if (artistName) {
-    <h2 class="home-page__name">
+    <h2 class="album-page__name">
       <a [routerLink]="'/artist/' + artistId">{{ artistName }}</a>
     </h2>
-    <div class="home-page__wrap">
+    <div class="album-page__wrap">
       @if (album && album.folder) {
         <img
+          class="album-page__folder"
           [src]="'.' + album.folder"
           [alt]="album.name"
-          style="float: right"
         />
       }
       <h3>{{ album?.name }} ({{ album?.year }})</h3>
       @for (song of songs; track song.id || song.name; let i = $index) {
-        <div class="home-page__item">
+        <div class="album-page__item">
           @if (song.id) {
             {{ i + 1 }}.
             <a [routerLink]="'/artist/' + artistId + '/song/' + song.id">
