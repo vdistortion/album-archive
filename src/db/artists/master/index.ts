@@ -12,7 +12,19 @@ const artist: TypeArtist = {
     youtubeMusic: 'https://music.youtube.com/channel/UC8n4KOpcZlbnWJ1DHa96k9Q',
     yandexMusic: 'https://music.yandex.ru/artist/359599',
   },
-  albums: [EnumAlbums.poTuStoronuSna],
+  albums: [
+    EnumAlbums.master,
+    EnumAlbums.sPetlyojNaShee,
+    EnumAlbums.talkOfTheDevil,
+    EnumAlbums.maniacParty,
+    EnumAlbums.pesniMyortvyh,
+    EnumAlbums.labirint,
+    EnumAlbums.klassika,
+    EnumAlbums.zhizni33,
+    EnumAlbums.akustika,
+    EnumAlbums.poTuStoronuSna,
+    EnumAlbums.viii,
+  ],
 };
 
 export default { artist, albums, songs };
