@@ -1,17 +1,9 @@
-<div class="song-page">
-  @if (artistName) {
-    <h2 class="song-page__name">
+@if (artistName) {
+  <div class="song-page">
+    <h2>
       <a [routerLink]="'/artist/' + artistId">{{ artistName }}</a>
     </h2>
-    @if (song?.clipYouTubeId) {
-      <div class="song-page__video">
-        <youtube-player
-          [videoId]="song?.clipYouTubeId"
-          placeholderImageQuality="low"
-        ></youtube-player>
-      </div>
-    }
-    <div class="song-page__wrap">
+    <div class="song-page__col">
       @if (song?.name) {
         @for (name of song?.name; track name; let index = $index) {
           @if (index) {
@@ -25,9 +17,7 @@
       }
       <small>{{ song?.authors }}</small>
       <pre>{{ song?.text }}</pre>
-    </div>
 
-    <div class="song-page__wrap">
       @if (albums.length) {
         @for (album of albums; track album.id) {
           <div class="song-page__item">
@@ -49,5 +39,15 @@
         </div>
       }
     </div>
-  }
-</div>
+    <div class="song-page__col">
+      @if (song?.clipYouTubeId) {
+        <div class="song-page__video">
+          <youtube-player
+            [videoId]="song?.clipYouTubeId"
+            placeholderImageQuality="low"
+          ></youtube-player>
+        </div>
+      }
+    </div>
+  </div>
+}

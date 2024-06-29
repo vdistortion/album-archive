@@ -18,13 +18,12 @@
   }
 
   &__item {
-    display: flex;
     line-height: 1.8;
 
     a {
       margin-left: 5px;
       text-decoration: none;
-      border-bottom: 1px solid #c32f27;
+      border-bottom: 1px solid var(--hover-text);
     }
   }
 

@@ -1,0 +1,11 @@
+.songs-page {
+  &__item {
+    line-height: 1.8;
+
+    a {
+      margin-left: 5px;
+      text-decoration: none;
+      border-bottom: 1px solid var(--hover-text);
+    }
+  }
+}

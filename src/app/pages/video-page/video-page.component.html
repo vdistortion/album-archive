@@ -8,12 +8,14 @@
     <div class="video-page__wrap">
       @for (song of songs; track song.id) {
         <div class="video-page__item">
-          <youtube-player
-            [videoId]="song.clipYouTubeId"
-            placeholderImageQuality="low"
-            (stateChange)="stateChange($event)"
-          ></youtube-player>
-          <span class="video-page__title">{{ song.name }}</span>
+          <div class="video-page__player">
+            <youtube-player
+              [videoId]="song.clipYouTubeId"
+              placeholderImageQuality="low"
+              (stateChange)="stateChange($event)"
+            ></youtube-player>
+          </div>
+          <div class="video-page__title">{{ song.name }}</div>
         </div>
       }
     </div>

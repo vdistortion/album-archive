@@ -1,15 +1,32 @@
+@import '../../../grid';
+
 .song-page {
+  @include row-flex();
+
+  h2 {
+    @include col();
+    @include size(24);
+  }
+
+  &__col {
+    @include col();
+    @include size(12);
+    @include size-w992(24);
+    position: relative;
+  }
+
   &__video {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    float: right;
-    max-width: 100%;
+    position: sticky;
+    top: 20px;
     aspect-ratio: 16 / 9;
+
+    @include w992-block() {
+      margin: 20px 0 40px;
+    }
   }
 
   h3 {
-    margin-top: 27px;
-    margin-bottom: 0;
+    margin: 0;
     font-weight: 800;
     line-height: 1.2;
     font-size: 30px;
