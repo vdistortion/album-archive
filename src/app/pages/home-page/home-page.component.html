@@ -2,8 +2,13 @@
   <div class="home-page__row">
     @for (artist of artists; track artist.id) {
       <div class="home-page__item">
-        <a [routerLink]="'artist/' + artist.id">
-          {{ artist.name }}
+        <a class="home-page__link" [routerLink]="'artist/' + artist.id">
+          <img
+            class="home-page__img"
+            [src]="artist.image"
+            [alt]="artist.name"
+          />
+          <span class="home-page__name">{{ artist.name }}</span>
         </a>
       </div>
     }

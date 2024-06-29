@@ -1,0 +1,33 @@
+@import '../../../grid';
+
+.home-page {
+  &__row {
+    @include row-flex();
+  }
+
+  &__item {
+    @include col();
+    @include size(12);
+    @include size-w768(24);
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__name {
+    display: block;
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

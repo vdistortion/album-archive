@@ -6,6 +6,7 @@ import { EnumAlbums, EnumArtist } from './types';
 const artist: TypeArtist = {
   id: EnumArtist.id,
   name: EnumArtist.name,
+  image: '/artist/shmely/artist.webp',
   streaming: {
     spotify: 'https://open.spotify.com/artist/4OXVjz9BARB2MwT6sdx8JE',
     youtube: 'https://www.youtube.com/channel/UCZkpG0pk3z1LondQYU_11Iw',

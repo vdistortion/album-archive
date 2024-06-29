@@ -11,7 +11,10 @@
           [alt]="album.name"
         />
       }
-      <h3>{{ album?.name }} ({{ album?.year }})</h3>
+      <h3>
+        {{ album?.name }}
+        <span>{{ album?.year }}</span>
+      </h3>
       @for (song of songs; track song.id || song.name; let i = $index) {
         <div class="album-page__item">
           @if (song.id) {

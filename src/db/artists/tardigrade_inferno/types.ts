@@ -18,4 +18,7 @@ export const enum EnumAlbums {
   burnTheCircus = 'burn-the-circus',
 }
 
-export const enum EnumSongs {}
+export const enum EnumSongs {
+  ringmasterHasToDie = 'ringmaster-has-to-die',
+  misery = 'misery',
+}

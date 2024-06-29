@@ -8,6 +8,7 @@ export type TypeArtist = {
   id: TypeId;
   name: string;
   albums: TypeId[];
+  image: string;
   streaming?: TypeStreaming;
 };
 

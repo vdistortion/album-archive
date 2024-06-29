@@ -6,6 +6,7 @@ import { EnumAlbums, EnumArtist } from './types';
 const artist: TypeArtist = {
   id: EnumArtist.id,
   name: EnumArtist.name,
+  image: '/artist/tardigrade_inferno/artist.webp',
   streaming: {
     spotify: 'https://open.spotify.com/artist/12ZMAQkYyLSuNLvjbySISC',
     youtube: 'https://www.youtube.com/channel/UCEuTnjeJchT6Xv03VRktLbA',

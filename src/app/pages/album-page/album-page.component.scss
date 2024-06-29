@@ -3,5 +3,40 @@
     margin-left: 10px;
     margin-bottom: 10px;
     float: right;
+    max-width: 500px;
+  }
+
+  &__item {
+    display: flex;
+    margin-left: 18px;
+    padding-left: 11px;
+    position: relative;
+    line-height: 1.8;
+
+    a {
+      margin-left: 5px;
+      text-decoration: none;
+      border-bottom: 1px solid #c32f27;
+    }
+  }
+
+  h3 {
+    font-weight: 800;
+    line-height: 1.1;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    max-width: 840px;
+    margin-top: 42px;
+
+    span {
+      display: block;
+      font-weight: 700;
+      line-height: 1.5;
+      font-size: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #696c6f;
+    }
   }
 }

@@ -1,5 +1,5 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.burnTheCircus,
@@ -7,7 +7,7 @@ const album: TypeAlbum = {
   year: 2023,
   folder: '/artist/tardigrade_inferno/albums/2023_btc.jpg',
   songs: [
-    { name: 'Ringmaster has to Die' },
+    EnumSongs.ringmasterHasToDie,
     { name: 'Clockwork God' },
     { name: 'Rats' },
     { name: 'Cholera' },
