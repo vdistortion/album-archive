@@ -39,4 +39,8 @@ export class VideoPageComponent implements OnInit {
   ngOnInit(): void {
     document.title = `${this.artistName} | Клипы`;
   }
+
+  stateChange(e: any) {
+    console.log(e);
+  }
 }

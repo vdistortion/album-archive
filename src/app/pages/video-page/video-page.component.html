@@ -1,14 +1,17 @@
 <div class="video-page">
   @if (artistName) {
-    <h2 class="video-page__name">
-      <a [routerLink]="'/artist/' + artistId">{{ artistName }}</a>
-    </h2>
+    <div class="video-page__wrap">
+      <h2 class="video-page__name">
+        <a [routerLink]="'/artist/' + artistId">{{ artistName }}</a>
+      </h2>
+    </div>
     <div class="video-page__wrap">
       @for (song of songs; track song.id) {
         <div class="video-page__item">
           <youtube-player
             [videoId]="song.clipYouTubeId"
             placeholderImageQuality="low"
+            (stateChange)="stateChange($event)"
           ></youtube-player>
           <span class="video-page__title">{{ song.name }}</span>
         </div>

@@ -1,17 +1,26 @@
 @import '../../../grid';
 
 .video-page {
+  margin-bottom: 40px;
+
   &__wrap {
     @include row-flex();
+  }
+
+  &__name {
+    @include col();
+    @include size(24);
+    padding: 0 22px;
   }
 
   &__item {
     @include col();
     @include size(12);
-    @include size-w480(24);
+    @include size-w992(24);
     padding: 20px 22px 24px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    aspect-ratio: 16 / 9;
   }
 
   &__title {
