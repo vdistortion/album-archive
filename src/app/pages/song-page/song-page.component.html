@@ -12,9 +12,17 @@
       </div>
     }
     <div class="song-page__wrap">
-      <h3>
-        {{ song?.name }}
-      </h3>
+      @if (song?.name) {
+        @for (name of song?.name; track name; let index = $index) {
+          @if (index) {
+            <small>{{ name }}</small>
+          } @else {
+            <h3>
+              {{ name }}
+            </h3>
+          }
+        }
+      }
       <small>{{ song?.authors }}</small>
       <pre>{{ song?.text }}</pre>
     </div>

@@ -33,6 +33,6 @@ export class SongPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.title = `${this.song?.name} | ${this.artistName}`;
+    document.title = `${this.song?.name[0]} | ${this.artistName}`;
   }
 }

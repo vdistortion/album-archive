@@ -3,7 +3,7 @@ import { EnumAlbums, EnumSongs } from '../types';
 
 const song: TypeSong = {
   id: EnumSongs.intro,
-  name: ['Всё будет хорошо'],
+  name: ['Всё будет хорошо (intro)'],
   albums: [EnumAlbums.pugovica],
   text: `
 Загнанный порчей художник смеётся,

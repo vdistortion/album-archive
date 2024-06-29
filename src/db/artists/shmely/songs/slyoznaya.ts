@@ -3,7 +3,7 @@ import { EnumAlbums, EnumSongs } from '../types';
 
 const song: TypeSong = {
   id: EnumSongs.slyoznaya,
-  name: ['Лиха та беда'],
+  name: ['Слёзная', 'Лиха та беда'],
   albums: [
     EnumAlbums.bombaVUbezhishche,
     EnumAlbums.organizm,

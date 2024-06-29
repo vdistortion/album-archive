@@ -26,11 +26,23 @@ export class AlbumPageComponent implements OnInit {
     const artist: TypeItem = this.artists[this.artistId];
     this.artistName = artist.artist.name;
     this.album = artist.albums[albumId];
-    this.songs = this.album.songs.map((songId) =>
-      typeof songId === 'string'
-        ? artist.songs[songId]
-        : { name: songId.name, id: '' },
-    );
+    this.songs = this.album.songs.map((songId) => {
+      if (typeof songId === 'string') {
+        const song = artist.songs[songId];
+        return {
+          id: song.id,
+          name: song.name[0],
+        };
+      }
+      if (Array.isArray(songId)) {
+        const [id, { name }] = songId;
+        return {
+          id,
+          name: name[0],
+        };
+      }
+      return { name: songId.name, id: '' };
+    });
   }
 
   ngOnInit(): void {

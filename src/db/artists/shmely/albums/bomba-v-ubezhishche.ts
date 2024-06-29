@@ -10,7 +10,7 @@ const album: TypeAlbum = {
     { name: 'Агония' },
     { name: 'Тишина и покой' },
     { name: 'Бом лбом' },
-    EnumSongs.polnaSuma,
+    [EnumSongs.polnaSuma, { name: ['Безлюдный остров'] }],
     { name: 'Туляремия' },
     { name: 'Вирус' },
     EnumSongs.yaNeAngel,

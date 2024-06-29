@@ -13,7 +13,7 @@ const album: TypeAlbum = {
     { name: 'Путь к... (Клочья)' },
     { name: 'Искушение' },
     EnumSongs.pokidayaMir,
-    EnumSongs.slyoznaya,
+    [EnumSongs.slyoznaya, { name: ['Лиха та беда'] }],
     { name: 'Клякса' },
     { name: 'Фабрика фекалий' },
     { name: 'Иволгой' },

@@ -8,6 +8,8 @@ type TypeStreamingList =
   | 'appleMusic'
   | 'yandexMusic';
 
+type SongPlaceholder = TypeId | { name: string } | [TypeId, { name: string[] }];
+
 export type TypeStreaming = Partial<Record<TypeStreamingList, string>>;
 
 export type TypeArtist = {
@@ -22,7 +24,7 @@ export type TypeAlbum = {
   id: TypeId;
   name: string;
   year: number;
-  songs: (TypeId | { name: string })[];
+  songs: SongPlaceholder[];
   info?: string;
   folder?: string;
   order?: number;

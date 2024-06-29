@@ -1,5 +1,5 @@
 export const enum EnumArtist {
-  id = 'tardigrade_inferno',
+  id = 'tardigrade-inferno',
   name = 'Tardigrade Inferno',
 }
 

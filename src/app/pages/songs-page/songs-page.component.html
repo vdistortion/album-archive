@@ -8,7 +8,7 @@
         <div class="home-page__item">
           {{ i + 1 }}.
           <a [routerLink]="'/artist/' + artistId + '/song/' + song.id">
-            {{ song.name }}
+            {{ song.name[0] }}
           </a>
         </div>
       }

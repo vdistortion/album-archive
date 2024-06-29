@@ -20,9 +20,9 @@ const album: TypeAlbum = {
     { name: 'Клюквенный сок' },
     EnumSongs.laboratoriyaAltruizma,
     { name: 'Дайте света' },
-    EnumSongs.tulovishchej,
+    [EnumSongs.tulovishchej, { name: ['Туловищей (remix)'] }],
     { name: 'Рисунки на душе' },
-    EnumSongs.skelety,
+    [EnumSongs.skelety, { name: ['Скелеты (video edit)'] }],
     { name: 'Outro' },
   ],
 };
