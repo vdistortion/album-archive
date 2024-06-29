@@ -25,6 +25,11 @@
         [link]="'/artist/' + artistId + '/songs'"
         [name]="'Все песни'"
       ></app-album-card>
+      <app-album-card
+        class="col"
+        [link]="'/artist/' + artistId + '/video'"
+        [name]="'Клипы'"
+      ></app-album-card>
     </div>
     <app-streaming-list [streaming]="streaming"></app-streaming-list>
   }
