@@ -1,5 +1,5 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.tardigradeInferno,
@@ -7,9 +7,9 @@ const album: TypeAlbum = {
   year: 2016,
   folder: '/artist/tardigrade_inferno/albums/2016_ti.jpg',
   songs: [
-    { name: 'Lovely Host' },
-    { name: 'A Grain of Sand' },
-    { name: 'Underwater Valentine' },
+    EnumSongs.lovelyHost,
+    EnumSongs.AGrainOfSand,
+    EnumSongs.underwaterValentine,
   ],
   info: `
   `,

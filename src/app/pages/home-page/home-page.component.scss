@@ -1,6 +1,8 @@
 @import '../../../grid';
 
 .home-page {
+  margin-top: 40px;
+
   &__row {
     @include row-flex();
   }

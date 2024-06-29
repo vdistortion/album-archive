@@ -6,7 +6,7 @@ const album: TypeAlbum = {
   name: 'Clockwork God',
   year: 2023,
   folder: '/artist/tardigrade_inferno/albums/2023_cg.jpg',
-  songs: [{ name: 'Clockwork God' }, EnumSongs.ringmasterHasToDie],
+  songs: [EnumSongs.clockworkGod, EnumSongs.ringmasterHasToDie],
   info: `
   `,
 };
