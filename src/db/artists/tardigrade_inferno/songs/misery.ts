@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.misery,
   name: ['Misery'],
   albums: [],
+  clipYouTubeId: 'UdzmAxVGwCw',
   text: `
 The drunken sailors come by
 Desperate lost and frisky

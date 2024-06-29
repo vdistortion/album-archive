@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.theWorstOfMe,
   name: ['The Worst of Me'],
   albums: [EnumAlbums.theWorstOfMe],
+  clipYouTubeId: '-ZmFGFufDDE',
   text: `
 I was walking through the park
 Fast and light

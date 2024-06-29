@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.skelety,
   name: ['Скелеты'],
   albums: [EnumAlbums.risunkiNaDushe, EnumAlbums.poshmelye],
+  clipYouTubeId: 'sm_W3X9wYo0',
   text: `
 Ровно пять тридцать утра,
 Спала в липкой коме Москва,

@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.spookyScarySkeletons,
   name: ['Spooky Scary Skeletons'],
   albums: [EnumAlbums.spookyScarySkeletons],
+  clipYouTubeId: 'T_381kOAtTg',
   text: `
 Spooky, scary skeletons
 Send shivers down your spine

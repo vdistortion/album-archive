@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { YouTubePlayer } from '@angular/youtube-player';
 import artists from '../../../db';
 import { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
 @Component({
   selector: 'app-song-page',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, YouTubePlayer],
   templateUrl: './song-page.component.html',
   styleUrl: './song-page.component.scss',
 })

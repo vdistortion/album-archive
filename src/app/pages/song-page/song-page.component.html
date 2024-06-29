@@ -1,9 +1,17 @@
-<div class="home-page">
+<div class="song-page">
   @if (artistName) {
-    <h2 class="home-page__name">
+    <h2 class="song-page__name">
       <a [routerLink]="'/artist/' + artistId">{{ artistName }}</a>
     </h2>
-    <div class="home-page__wrap">
+    @if (song?.clipYouTubeId) {
+      <div class="song-page__video">
+        <youtube-player
+          [videoId]="song?.clipYouTubeId"
+          placeholderImageQuality="low"
+        ></youtube-player>
+      </div>
+    }
+    <div class="song-page__wrap">
       <h3>
         {{ song?.name }}
       </h3>
@@ -11,10 +19,10 @@
       <pre>{{ song?.text }}</pre>
     </div>
 
-    <div class="home-page__wrap">
+    <div class="song-page__wrap">
       @if (albums.length) {
         @for (album of albums; track album.id) {
-          <div class="home-page__item">
+          <div class="song-page__item">
             <strong>
               {{ album.year }} —
               <span>
@@ -26,7 +34,7 @@
           </div>
         }
       } @else {
-        <div class="home-page__item">
+        <div class="song-page__item">
           <a [routerLink]="'/artist/' + artistId + '/songs/other'">
             Песни, не вошедшие в альбомы
           </a>

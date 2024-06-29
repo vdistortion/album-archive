@@ -9,6 +9,7 @@ const song: TypeSong = {
     EnumAlbums.clockworkGod,
     EnumAlbums.burnTheCircus,
   ],
+  clipYouTubeId: 'hh3kZP4kNsE',
   text: `
 It's an absurdity, it's his fault
 It was just an innocent somersault

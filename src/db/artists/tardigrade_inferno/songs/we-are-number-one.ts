@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.weAreNumberOne,
   name: ['We Are Number One'],
   albums: [EnumAlbums.mastermind],
+  clipYouTubeId: 'mzJ4vCjSt28',
   text: `
 We are number one!
 

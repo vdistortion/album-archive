@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.gilotina,
   name: ['Гильотина в цветах'],
   albums: [EnumAlbums.pugovica],
+  clipYouTubeId: 'cFLeFuZwbmc',
   text: `
 Жил палач, на совесть служил
 В краски природы влюблён был он...

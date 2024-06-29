@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.naLiniiOgnya,
   name: ['На линии огня'],
   albums: [],
+  clipYouTubeId: 'sdAZuPTbFtE',
   text: `
 Каменные джунгли, город грехов,
 Пустая жизнь, пока не встретишь любовь.

@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.bol,
   name: ['Боль'],
   albums: [EnumAlbums.agressivnyjPokoj, EnumAlbums.yaVernusKTebe],
+  clipYouTubeId: 'UShBtzycUsY',
   text: `
 Разрисовано тело и лицо
 Яркой краскою, ранами от розг

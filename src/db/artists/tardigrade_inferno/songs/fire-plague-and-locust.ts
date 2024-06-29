@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.firePlagueAndLocust,
   name: ['Fire, Plague and Locust'],
   albums: [EnumAlbums.firePlagueAndLocust, EnumAlbums.arrivalOfATrain],
+  clipYouTubeId: 'hacScKtrqbQ',
   text: `
 First thing in the morning
 Check if the world is burning

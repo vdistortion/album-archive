@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.howNightmaresDie,
   name: ['How Nightmares Die'],
   albums: [EnumAlbums.howNightmaresDie],
+  clipYouTubeId: 'sR7HHmJ4Jk4',
   text: `
 Lightning outside my window
 Shines on her face

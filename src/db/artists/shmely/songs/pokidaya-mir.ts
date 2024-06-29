@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.pokidayaMir,
   name: ['Покидая мир'],
   albums: [EnumAlbums.organizm, EnumAlbums.yaVernusKTebe],
+  clipYouTubeId: 'LG8BvZiYcDA',
   text: `
 Все сговорились против меня,
 Забивают стрелки грехи с моей победой

@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.executionIsFun,
   name: ['Execution is fun!'],
   albums: [EnumAlbums.executionIsFun],
+  clipYouTubeId: 'DrnKM4mGDIQ',
   text: `
 Execution’s fun
 I think that you should come

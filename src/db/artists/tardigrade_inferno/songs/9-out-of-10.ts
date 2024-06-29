@@ -5,8 +5,8 @@ const song: TypeSong = {
   id: EnumSongs.outOf,
   name: ['9 out of 10'],
   albums: [EnumAlbums.burnTheCircus],
+  clipYouTubeId: 'JoEULDNPL9s',
   text: `
- \t
 Last thing I heard before I died
 Was 10 frightened doctors talking aside
 9 out of 10 doctors argued that I,

@@ -37,6 +37,7 @@ export type TypeSong = {
   albums: TypeId[];
   text: string;
   authors?: string;
+  clipYouTubeId?: string;
 };
 
 export type TypeSongs = Record<TypeId, TypeSong>;

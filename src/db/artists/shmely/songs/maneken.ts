@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.maneken,
   name: ['Манекен'],
   albums: [EnumAlbums.agressivnyjPokoj],
+  clipYouTubeId: 'exkzYZohXRg',
   text: `
 Пешеходов пещер усталых
 Хватает разведчик след,

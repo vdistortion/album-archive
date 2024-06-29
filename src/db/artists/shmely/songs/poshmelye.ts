@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.poshmelye,
   name: ['Пошмелье'],
   albums: [EnumAlbums.poshmelye],
+  clipYouTubeId: 'ArmZpTJd4_0',
   authors: 'Стакан и Макс Экс - Макс Экс',
   text: `
 Материки движутся по шельфу
