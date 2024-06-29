@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.zloradostnayaOpuhol,
   name: 'Злорадостная опухоль',
   year: 1999,
+  folder: '/artist/shmely/albums/1999_zo.jpg',
   songs: [
     { name: 'Были мы' },
     { name: 'Лезвие' },

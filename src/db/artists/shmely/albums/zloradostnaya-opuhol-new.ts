@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.zloradostnayaOpuholNew,
   name: 'Злорадостная опухоль. Переиздание',
   year: 2016,
+  folder: '/artist/shmely/albums/2016_zo.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/4Q4riSrf2rdfmY6EllfbRp',
     youtube:

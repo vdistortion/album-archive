@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.vethijSbornik,
   name: 'Ветхий сборник',
   year: 2005,
+  folder: '/artist/shmely/albums/2005_vs.jpg',
   streaming: { yandexMusic: 'https://music.yandex.ru/album/79303' },
   songs: [
     { name: 'Помолись' },

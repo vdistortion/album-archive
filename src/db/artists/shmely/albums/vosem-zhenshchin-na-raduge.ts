@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.vosemZhenshchinNaRaduge,
   name: 'Восемь женщин на радуге',
   year: 2005,
+  folder: '/artist/shmely/albums/2005_8.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/3XCE0DFw3NkkTXcIXQUBUG',
     youtube:

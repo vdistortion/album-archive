@@ -5,6 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.petlyaSoblazna,
   name: 'Петля соблазна',
   year: 1998,
+  folder: '/artist/shmely/albums/1998_ps_.jpg',
   songs: [
     {
       name: 'Вьюга',
