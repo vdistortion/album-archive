@@ -1,16 +1,24 @@
+@import '../../../grid';
+
 .album-page {
-  &__folder {
+  &__folder-wrap {
+    max-width: 500px;
+    float: right;
     margin-left: 10px;
     margin-bottom: 10px;
-    float: right;
-    max-width: 500px;
+
+    @include w768-block() {
+      float: none;
+      margin: 0;
+    }
+  }
+
+  &__folder {
+    max-width: 100%;
   }
 
   &__item {
     display: flex;
-    margin-left: 18px;
-    padding-left: 11px;
-    position: relative;
     line-height: 1.8;
 
     a {

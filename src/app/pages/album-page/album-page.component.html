@@ -5,11 +5,13 @@
     </h2>
     <div class="album-page__wrap">
       @if (album && album.folder) {
-        <img
-          class="album-page__folder"
-          [src]="'.' + album.folder"
-          [alt]="album.name"
-        />
+        <div class="album-page__folder-wrap">
+          <img
+            class="album-page__folder"
+            [src]="'.' + album.folder"
+            [alt]="album.name"
+          />
+        </div>
       }
       <h3>
         {{ album?.name }}
