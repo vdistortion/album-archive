@@ -26,29 +26,6 @@
         [name]="'Все песни'"
       ></app-album-card>
     </div>
-    @if (streaming) {
-      <ul>
-        @if (streaming.spotify) {
-          <li>
-            <a target="_blank" [href]="streaming.spotify">Spotify</a>
-          </li>
-        }
-        @if (streaming.youtubeMusic) {
-          <li>
-            <a target="_blank" [href]="streaming.youtubeMusic">YouTube Music</a>
-          </li>
-        }
-        @if (streaming.youtube) {
-          <li>
-            <a target="_blank" [href]="streaming.youtube">YouTube</a>
-          </li>
-        }
-        @if (streaming.yandexMusic) {
-          <li>
-            <a target="_blank" [href]="streaming.yandexMusic">Яндекс.Музыка</a>
-          </li>
-        }
-      </ul>
-    }
+    <app-streaming-list [streaming]="streaming"></app-streaming-list>
   }
 </div>

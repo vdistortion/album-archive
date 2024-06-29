@@ -1,6 +1,12 @@
 type TypeId = string;
 
-type TypeStreamingList = 'spotify' | 'youtube' | 'youtubeMusic' | 'yandexMusic';
+type TypeStreamingList =
+  | 'spotify'
+  | 'bandcamp'
+  | 'youtube'
+  | 'youtubeMusic'
+  | 'appleMusic'
+  | 'yandexMusic';
 
 export type TypeStreaming = Partial<Record<TypeStreamingList, string>>;
 

@@ -5,7 +5,7 @@
         <a class="home-page__link" [routerLink]="'artist/' + artist.id">
           <img
             class="home-page__img"
-            [src]="artist.image"
+            [src]="'.' + artist.image"
             [alt]="artist.name"
           />
           <span class="home-page__name">{{ artist.name }}</span>

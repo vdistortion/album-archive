@@ -12,6 +12,9 @@ const artist: TypeArtist = {
     youtube: 'https://www.youtube.com/channel/UCEuTnjeJchT6Xv03VRktLbA',
     youtubeMusic: 'https://music.youtube.com/channel/UCEuTnjeJchT6Xv03VRktLbA',
     yandexMusic: 'https://music.yandex.ru/artist/6761875',
+    bandcamp: 'https://tardigradeinferno.bandcamp.com/',
+    appleMusic:
+      'https://music.apple.com/ru/artist/tardigrade-inferno/1448941163',
   },
   albums: [
     EnumAlbums.tardigradeInferno,

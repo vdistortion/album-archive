@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { StreamingListComponent } from '../../components/ui/streaming-list/streaming-list.component';
 import artists from '../../../db';
 import { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
 @Component({
   selector: 'app-album-page',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, StreamingListComponent],
   templateUrl: './album-page.component.html',
   styleUrl: './album-page.component.scss',
 })
