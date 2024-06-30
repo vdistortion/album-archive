@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 import { AlbumCardComponent } from '../../components/ui/album-card/album-card.component';
 import { StreamingListComponent } from '../../components/ui/streaming-list/streaming-list.component';
-import { faviconChange } from '../../favicon';
+import { ArtistService } from '../../services/artist.service';
 import artists from '../../../db';
 import {
   TypeAlbum,
@@ -25,10 +26,16 @@ export class ArtistPageComponent implements OnInit {
   public albums: TypeAlbum[] = [];
   public streaming: TypeStreaming | undefined;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private titleService: Title,
+    private artistService: ArtistService,
+  ) {
+    this.route.params.subscribe(({ artist }) => {
+      this.artistService.setArtist(artist);
+    });
     this.artistId = this.route.snapshot.paramMap.get('artist');
     if (!this.artistId) return;
-    faviconChange(this.artistId);
 
     const artist: TypeItem = this.artists[this.artistId];
     this.streaming = artist.artist.streaming;
@@ -39,6 +46,6 @@ export class ArtistPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.title = `${this.artistName} | Дискография`;
+    this.titleService.setTitle(`${this.artistName} | Дискография`);
   }
 }

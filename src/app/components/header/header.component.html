@@ -1,0 +1,9 @@
+<header class="header">
+  @if (artistId) {
+    <h2>
+      <a [routerLink]="'/artist/' + artistId">
+        {{ artistName }}
+      </a>
+    </h2>
+  }
+</header>

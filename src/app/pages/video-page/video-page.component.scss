@@ -7,12 +7,6 @@
     @include row-flex();
   }
 
-  &__name {
-    @include col();
-    @include size(24);
-    padding: 0 22px;
-  }
-
   &__item {
     @include col();
     @include size(12);

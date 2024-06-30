@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { YouTubePlayer } from '@angular/youtube-player';
-import { faviconChange } from '../../favicon';
+import { Title } from '@angular/platform-browser';
+import { ArtistService } from '../../services/artist.service';
 import artists from '../../../db';
 import { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
@@ -19,11 +20,17 @@ export class SongPageComponent implements OnInit {
   public albums: TypeAlbum[] = [];
   public song: TypeSong | null = null;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private titleService: Title,
+    private artistService: ArtistService,
+  ) {
+    this.route.params.subscribe(({ artist, song }) => {
+      this.artistService.setArtist(artist, '', song);
+    });
     this.artistId = this.route.snapshot.paramMap.get('artist');
     const songId: string | null = this.route.snapshot.paramMap.get('song');
     if (!this.artistId || !songId) return;
-    faviconChange(this.artistId);
 
     const artist: TypeItem = this.artists[this.artistId];
     this.artistName = artist.artist.name;
@@ -35,6 +42,6 @@ export class SongPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.title = `${this.song?.name[0]} | ${this.artistName}`;
+    this.titleService.setTitle(`${this.song?.name[0]} | ${this.artistName}`);
   }
 }

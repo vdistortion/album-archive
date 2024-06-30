@@ -1,8 +1,5 @@
 <div class="album-page">
   @if (artistName) {
-    <h2 class="album-page__name">
-      <a [routerLink]="'/artist/' + artistId">{{ artistName }}</a>
-    </h2>
     <div class="album-page__wrap">
       @if (album && album.folder) {
         <div class="album-page__folder-wrap">
@@ -25,7 +22,7 @@
               {{ song.name }}
             </a>
           } @else {
-            {{ i + 1 }}. {{ song.name }}
+            {{ i + 1 }}. <span>{{ song.name }}</span>
           }
         </div>
       }

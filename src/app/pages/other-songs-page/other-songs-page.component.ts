@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { faviconChange } from '../../favicon';
+import { Title } from '@angular/platform-browser';
+import { ArtistService } from '../../services/artist.service';
 import artists from '../../../db';
 import { TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
@@ -17,10 +18,16 @@ export class OtherSongsPageComponent implements OnInit {
   public artistId: string | null = null;
   public songs: TypeSong[] = [];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private titleService: Title,
+    private artistService: ArtistService,
+  ) {
+    this.route.params.subscribe(({ artist }) => {
+      this.artistService.setArtist(artist);
+    });
     this.artistId = this.route.snapshot.paramMap.get('artist');
     if (!this.artistId) return;
-    faviconChange(this.artistId);
 
     const artist: TypeItem = this.artists[this.artistId];
     this.artistName = artist.artist.name;
@@ -28,6 +35,6 @@ export class OtherSongsPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.title = `${this.artistName} | Другие песни`;
+    this.titleService.setTitle(`${this.artistName} | Другие песни`);
   }
 }

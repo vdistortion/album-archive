@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { faviconChange } from '../../favicon';
+import { Title } from '@angular/platform-browser';
+import { ArtistService } from '../../services/artist.service';
 import { artistList } from '../../../db';
 import { TypeArtist } from '../../../db/types';
 
@@ -11,11 +12,14 @@ import { TypeArtist } from '../../../db/types';
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent {
   public artists: TypeArtist[] = artistList;
 
-  ngOnInit(): void {
-    faviconChange();
-    document.title = 'Каталог исполнителей';
+  constructor(
+    private titleService: Title,
+    private artistService: ArtistService,
+  ) {
+    this.titleService.setTitle('Каталог исполнителей');
+    this.artistService.setArtist();
   }
 }

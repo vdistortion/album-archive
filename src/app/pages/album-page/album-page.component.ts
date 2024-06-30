@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 import { StreamingListComponent } from '../../components/ui/streaming-list/streaming-list.component';
-import { faviconChange } from '../../favicon';
+import { ArtistService } from '../../services/artist.service';
 import artists from '../../../db';
 import { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
@@ -19,11 +20,17 @@ export class AlbumPageComponent implements OnInit {
   public album: TypeAlbum | null = null;
   public songs: (TypeSong | { name: string; id: string })[] = [];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private titleService: Title,
+    private artistService: ArtistService,
+  ) {
+    this.route.params.subscribe(({ artist, album }) => {
+      this.artistService.setArtist(artist, album);
+    });
     this.artistId = this.route.snapshot.paramMap.get('artist');
     const albumId: string | null = this.route.snapshot.paramMap.get('album');
     if (!this.artistId || !albumId) return;
-    faviconChange(this.artistId);
 
     const artist: TypeItem = this.artists[this.artistId];
     this.artistName = artist.artist.name;
@@ -48,6 +55,8 @@ export class AlbumPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.title = `${this.album?.name} (${this.album?.year}) | ${this.artistName}`;
+    this.titleService.setTitle(
+      `${this.album?.name} (${this.album?.year}) | ${this.artistName}`,
+    );
   }
 }

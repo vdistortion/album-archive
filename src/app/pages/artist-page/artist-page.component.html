@@ -1,36 +1,33 @@
-<div class="home-page">
+<div class="artist-page">
   @if (artistName) {
-    <h2 class="home-page__name">
-      <a routerLink="">
-        {{ artistName }}
-      </a>
-    </h2>
-    <div class="home-page__wrap rows">
+    <div class="artist-page__wrap rows">
       @for (album of albums; track album.id) {
         <app-album-card
-          class="col"
-          [link]="album.id"
+          class="artist-page__col col"
+          [link]="'album/' + album.id"
           [name]="album.name"
           [year]="album.year"
           [image]="album.folder"
         ></app-album-card>
       }
       <app-album-card
-        class="col"
-        [link]="'/artist/' + artistId + '/songs/other'"
+        class="artist-page__col col"
+        [link]="'songs/other'"
         [name]="'Песни, не вошедшие в альбомы'"
       ></app-album-card>
       <app-album-card
-        class="col"
-        [link]="'/artist/' + artistId + '/songs'"
+        class="artist-page__col col"
+        [link]="'songs'"
         [name]="'Все песни'"
       ></app-album-card>
       <app-album-card
-        class="col"
-        [link]="'/artist/' + artistId + '/video'"
+        class="artist-page__col col"
+        [link]="'video'"
         [name]="'Клипы'"
       ></app-album-card>
+      <div class="artist-page__streaming-list col">
+        <app-streaming-list [streaming]="streaming"></app-streaming-list>
+      </div>
     </div>
-    <app-streaming-list [streaming]="streaming"></app-streaming-list>
   }
 </div>

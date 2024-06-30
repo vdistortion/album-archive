@@ -1,8 +1,5 @@
 @if (artistName) {
   <div class="song-page">
-    <h2>
-      <a [routerLink]="'/artist/' + artistId">{{ artistName }}</a>
-    </h2>
     <div class="song-page__col">
       @if (song?.name) {
         @for (name of song?.name; track name; let index = $index) {

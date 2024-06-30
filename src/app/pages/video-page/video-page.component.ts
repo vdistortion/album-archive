@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 import { YouTubePlayer } from '@angular/youtube-player';
-import { faviconChange } from '../../favicon';
+import { ArtistService } from '../../services/artist.service';
 import artists from '../../../db';
 import { TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
@@ -18,10 +19,16 @@ export class VideoPageComponent implements OnInit {
   public artistId: string | null = null;
   public songs: TypeSong[] = [];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private titleService: Title,
+    private artistService: ArtistService,
+  ) {
+    this.route.params.subscribe(({ artist }) => {
+      this.artistService.setArtist(artist);
+    });
     this.artistId = this.route.snapshot.paramMap.get('artist');
     if (!this.artistId) return;
-    faviconChange(this.artistId);
 
     const artist: TypeItem = this.artists[this.artistId];
     this.artistName = artist.artist.name;
@@ -29,7 +36,7 @@ export class VideoPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.title = `${this.artistName} | Клипы`;
+    this.titleService.setTitle(`${this.artistName} | Клипы`);
   }
 
   stateChange(e: any) {
