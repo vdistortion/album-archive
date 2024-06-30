@@ -15,7 +15,12 @@
               (stateChange)="stateChange($event)"
             ></youtube-player>
           </div>
-          <div class="video-page__title">{{ song.name }}</div>
+          <a
+            class="video-page__title"
+            [routerLink]="'/artist/' + artistId + '/song/' + song.id"
+          >
+            {{ song.name }}
+          </a>
         </div>
       }
     </div>
