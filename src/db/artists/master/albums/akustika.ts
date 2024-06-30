@@ -1,5 +1,5 @@
 import { TypeAlbum } from '../../../types';
-import { EnumAlbums } from '../types';
+import { EnumAlbums, EnumSongs } from '../types';
 
 const album: TypeAlbum = {
   id: EnumAlbums.akustika,
@@ -7,15 +7,17 @@ const album: TypeAlbum = {
   year: 2005,
   folder: '/artist/master/albums/akystika_2005.jpg',
   songs: [
-    { name: 'Плач Свирели' },
+    EnumSongs.plachSvireli,
     { name: 'Тореро' },
-    { name: 'Високосный Век' },
-    { name: '33 Жизни' },
+    { name: 'Високосный век' },
+    { name: '33 жизни' },
     { name: 'Палачи' },
-    { name: 'Heavy Ламбада' },
-    { name: 'Пепел На Ветру' },
+    { name: 'Heavy-ламбада' },
+    { name: 'Пепел на ветру' },
     { name: 'Игра' },
     { name: 'Кресты' },
+    { name: 'Здесь куют металл' },
+    EnumSongs.veter,
   ],
   info: `
 Акустический альбом вышел в свет в конце декабря 2005 года. В альбом вошли как старые хиты, так и две новые композиции.

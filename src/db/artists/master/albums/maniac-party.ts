@@ -12,7 +12,7 @@ const album: TypeAlbum = {
     { name: 'Lock Them In Graves' },
     { name: 'Burning In Hell (Civil War Disaster)' },
     { name: 'Screams Of Pain' },
-    { name: 'Time X' },
+    { name: 'Time X (bass-solo)' },
     { name: 'They Are Just Like Us' },
     { name: 'Punk Guys' },
     { name: 'Go!' },

@@ -4,6 +4,7 @@ import talkOfTheDevil from './talk-of-the-devil';
 import maniacParty from './maniac-party';
 import pesniMyortvyh from './pesni-myortvyh';
 import labirint from './labirint';
+import rcCars from './rc-cars';
 import klassika from './klassika';
 import zhizni33 from './33-zhizni';
 import akustika from './akustika';
@@ -17,6 +18,7 @@ export default {
   [maniacParty.id]: maniacParty,
   [pesniMyortvyh.id]: pesniMyortvyh,
   [labirint.id]: labirint,
+  [rcCars.id]: rcCars,
   [klassika.id]: klassika,
   [zhizni33.id]: zhizni33,
   [akustika.id]: akustika,

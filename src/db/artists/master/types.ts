@@ -10,6 +10,7 @@ export const enum EnumAlbums {
   maniacParty = 'maniac-party',
   pesniMyortvyh = 'pesni-myortvyh',
   labirint = 'labirint',
+  rcCars = 'rc-cars',
   klassika = 'klassika',
   zhizni33 = '33-zhizni',
   akustika = 'akustika',
@@ -19,6 +20,8 @@ export const enum EnumAlbums {
 
 export const enum EnumSongs {
   zaGranyu = 'za-granyu',
+  plachSvireli = 'plach-svireli',
+  veter = 'veter',
   naLiniiOgnya = 'na-linii-ognya',
   rideToLiveLiveToRide = 'ride-to-live-live-to-ride',
 }

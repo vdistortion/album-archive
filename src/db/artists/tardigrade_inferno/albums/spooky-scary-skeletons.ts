@@ -8,6 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/tardigrade_inferno/albums/2021_sss.jpg',
   songs: [EnumSongs.spookyScarySkeletons],
   info: `
+Andrew Gold cover
   `,
 };
 

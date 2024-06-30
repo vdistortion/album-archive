@@ -14,7 +14,7 @@ const album: TypeAlbum = {
     { name: 'Live To Die' },
     { name: 'Tsar' },
     { name: 'Heroes' },
-    { name: 'Romance' },
+    { name: 'Romance (bass-solo)' },
     { name: 'I Hate Your Sex' },
     { name: 'Paranoid' },
   ],

@@ -20,6 +20,7 @@ const artist: TypeArtist = {
     EnumAlbums.maniacParty,
     EnumAlbums.pesniMyortvyh,
     EnumAlbums.labirint,
+    EnumAlbums.rcCars,
     EnumAlbums.klassika,
     EnumAlbums.zhizni33,
     EnumAlbums.akustika,
