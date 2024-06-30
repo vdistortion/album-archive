@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { AlbumCardComponent } from '../../components/ui/album-card/album-card.component';
 import { StreamingListComponent } from '../../components/ui/streaming-list/streaming-list.component';
+import { faviconChange } from '../../favicon';
 import artists from '../../../db';
 import {
   TypeAlbum,
@@ -27,6 +28,7 @@ export class ArtistPageComponent implements OnInit {
   constructor(private route: ActivatedRoute) {
     this.artistId = this.route.snapshot.paramMap.get('artist');
     if (!this.artistId) return;
+    faviconChange(this.artistId);
 
     const artist: TypeItem = this.artists[this.artistId];
     this.streaming = artist.artist.streaming;

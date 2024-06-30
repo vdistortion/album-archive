@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import artists, { artistList } from '../../../db';
+import { faviconChange } from '../../favicon';
+import { artistList } from '../../../db';
 import { TypeArtist } from '../../../db/types';
-
-console.log(artists);
 
 @Component({
   selector: 'app-home-page',
@@ -16,6 +15,7 @@ export class HomePageComponent implements OnInit {
   public artists: TypeArtist[] = artistList;
 
   ngOnInit(): void {
+    faviconChange();
     document.title = 'Каталог исполнителей';
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { YouTubePlayer } from '@angular/youtube-player';
+import { faviconChange } from '../../favicon';
 import artists from '../../../db';
 import { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
@@ -22,6 +23,7 @@ export class SongPageComponent implements OnInit {
     this.artistId = this.route.snapshot.paramMap.get('artist');
     const songId: string | null = this.route.snapshot.paramMap.get('song');
     if (!this.artistId || !songId) return;
+    faviconChange(this.artistId);
 
     const artist: TypeItem = this.artists[this.artistId];
     this.artistName = artist.artist.name;

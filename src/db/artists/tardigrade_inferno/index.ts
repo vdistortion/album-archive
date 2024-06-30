@@ -1,4 +1,5 @@
 import { TypeArtist } from '../../types';
+import { ArtistClass } from '../../artist.class';
 import albums from './albums';
 import songs from './songs';
 import { EnumAlbums, EnumArtist } from './types';
@@ -32,4 +33,10 @@ const artist: TypeArtist = {
   ],
 };
 
-export default { artist, albums, songs };
+class Artist extends ArtistClass {
+  artist = artist;
+  albums = albums;
+  override songs = songs;
+}
+
+export default new Artist();

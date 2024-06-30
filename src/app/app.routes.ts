@@ -33,7 +33,7 @@ export const routes: Routes = [
     component: SongPageComponent,
   },
   {
-    path: 'artist/:artist/:album',
+    path: 'artist/:artist/album/:album',
     component: AlbumPageComponent,
   },
   {

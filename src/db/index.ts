@@ -11,6 +11,8 @@ const artists: TypeItems = {
 
 export default artists;
 
+console.log(artists);
+
 export const artistList: TypeArtist[] = [
   tardigradeInferno.artist,
   master.artist,

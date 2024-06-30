@@ -48,6 +48,10 @@ export type TypeItem = {
   artist: TypeArtist;
   albums: TypeAlbums;
   songs: TypeSongs;
+  getSongsWithTexts(): TypeSong[];
+  getSongsWithoutAlbum(): TypeSong[];
+  getAllVideos(): TypeSong[];
+  sortAsc(a: TypeSong, b: TypeSong): number;
 };
 
 export type TypeItems = Record<TypeId, TypeItem>;

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { YouTubePlayer } from '@angular/youtube-player';
+import { faviconChange } from '../../favicon';
 import artists from '../../../db';
 import { TypeItem, TypeItems, TypeSong } from '../../../db/types';
-import { YouTubePlayer } from '@angular/youtube-player';
 
 @Component({
   selector: 'app-video-page',
@@ -20,20 +21,11 @@ export class VideoPageComponent implements OnInit {
   constructor(private route: ActivatedRoute) {
     this.artistId = this.route.snapshot.paramMap.get('artist');
     if (!this.artistId) return;
+    faviconChange(this.artistId);
 
     const artist: TypeItem = this.artists[this.artistId];
     this.artistName = artist.artist.name;
-    this.songs = Object.values(artist.songs)
-      .filter((song) => song.clipYouTubeId)
-      .sort((a: TypeSong, b: TypeSong) => {
-        if (a.name[0] < b.name[0]) {
-          return -1;
-        }
-        if (a.name[0] > b.name[0]) {
-          return 1;
-        }
-        return 0;
-      });
+    this.songs = artist.getAllVideos().sort(artist.sortAsc);
   }
 
   ngOnInit(): void {
