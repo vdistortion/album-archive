@@ -1,91 +1,12 @@
 @if (streaming) {
-  <ul class="streaming-list">
-    @if (streaming.spotify) {
-      <li class="streaming-list__item" title="Spotify">
-        <a
-          class="streaming-list__link"
-          target="_blank"
-          [href]="streaming.spotify"
-        >
+  <ul class="streaming-list" aria-label="Streaming List">
+    @for (item of list; track item.link) {
+      <li class="streaming-list__item" [title]="item.name">
+        <a class="streaming-list__link" target="_blank" [href]="item.link">
           <img
             class="streaming-list__logo"
-            src="./streaming/spotify.svg"
-            alt="Spotify"
-          />
-        </a>
-      </li>
-    }
-    @if (streaming.appleMusic) {
-      <li class="streaming-list__item" title="Apple Music">
-        <a
-          class="streaming-list__link"
-          target="_blank"
-          [href]="streaming.appleMusic"
-        >
-          <img
-            class="streaming-list__logo"
-            src="./streaming/appleMusic.svg"
-            alt="Apple Music"
-          />
-        </a>
-      </li>
-    }
-    @if (streaming.youtubeMusic) {
-      <li class="streaming-list__item" title="YouTube Music">
-        <a
-          class="streaming-list__link"
-          target="_blank"
-          [href]="streaming.youtubeMusic"
-        >
-          <img
-            class="streaming-list__logo"
-            src="./streaming/YouTubeMusic.svg"
-            alt="YouTube Music"
-          />
-        </a>
-      </li>
-    }
-    @if (streaming.youtube) {
-      <li class="streaming-list__item" title="YouTube">
-        <a
-          class="streaming-list__link"
-          target="_blank"
-          [href]="streaming.youtube"
-        >
-          <img
-            class="streaming-list__logo"
-            src="./streaming/YouTube.svg"
-            alt="YouTube"
-          />
-        </a>
-      </li>
-    }
-    @if (streaming.bandcamp) {
-      <li class="streaming-list__item" title="Bandcamp">
-        <a
-          class="streaming-list__link"
-          target="_blank"
-          [href]="streaming.bandcamp"
-        >
-          <img
-            class="streaming-list__logo"
-            src="./streaming/bandcamp.svg"
-            alt="Bandcamp"
-          />
-        </a>
-      </li>
-    }
-    @if (streaming.yandexMusic) {
-      <li class="streaming-list__item" title="Яндекс.Музыка">
-        <a
-          class="streaming-list__link"
-          target="_blank"
-          [href]="streaming.yandexMusic"
-        >
-          <img
-            class="streaming-list__logo"
-            src="./streaming/yandexMusic.svg"
-            alt="Яндекс.Музыка"
+            [src]="'./streaming/' + item.image"
+            [alt]="item.name"
           />
         </a>
       </li>

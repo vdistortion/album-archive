@@ -1,6 +1,6 @@
 type TypeId = string;
 
-type TypeStreamingList =
+export type TypeStreamingList =
   | 'spotify'
   | 'bandcamp'
   | 'youtube'
