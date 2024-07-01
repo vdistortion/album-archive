@@ -16,6 +16,6 @@ export class AlbumCardComponent {
   @Input() public thumbnail: boolean = false;
 
   get folder() {
-    return this.image ?? '/artist/album-card.jpg';
+    return this.image ?? '/album-card.jpg';
   }
 }
