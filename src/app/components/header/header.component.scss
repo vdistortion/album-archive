@@ -1,12 +1,47 @@
+@import '../../../grid';
+
 .header {
   display: flex;
   align-items: center;
-  background-color: #333;
+  justify-content: space-between;
+  column-gap: 20px;
+  background-color: rgba(50, 50, 50, 0.5);
   padding: 10px 20px;
   margin-bottom: 20px;
-  min-height: 40px;
+
+  @include w768-block() {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  @include w480-block() {
+    text-align: center;
+  }
 
   h2 {
     margin: 0;
+  }
+
+  &__menu {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    @include w480-block() {
+      flex-wrap: wrap;
+    }
+
+    li.active {
+      color: var(--hover-text);
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 }

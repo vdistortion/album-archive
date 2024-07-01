@@ -1,14 +1,19 @@
 @if (artistName) {
   <div class="songs-page rows">
     <div class="songs-page__item col">
-      <h3>Все песни</h3>
+      <h3>
+        <span>Все песни</span> |
+        <a [routerLink]="'other'">Песни, не вошедшие в альбомы</a>
+      </h3>
     </div>
     @for (song of songs; track song.id; let i = $index) {
       <div class="songs-page__item col">
-        {{ i + 1 }}.
-        <a [routerLink]="'/artist/' + artistId + '/song/' + song.id">
-          {{ song.name[0] }}
-        </a>
+        <div class="songs-page__song">
+          {{ i + 1 }}.
+          <a [routerLink]="'/artist/' + artistId + '/song/' + song.id">
+            {{ song.name[0] }}
+          </a>
+        </div>
       </div>
     }
   </div>

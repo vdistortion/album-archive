@@ -4,7 +4,19 @@
   &__item {
     @include size(24);
     line-height: 1.8;
+  }
 
+  h3 {
+    @include w480-block() {
+      font-size: 18px;
+    }
+
+    span {
+      color: var(--hover-text);
+    }
+  }
+
+  &__song {
     a {
       margin-left: 5px;
       text-decoration: none;

@@ -9,21 +9,6 @@
         [image]="album.folder"
       ></app-album-card>
     }
-    <app-album-card
-      class="artist-page__col col"
-      [link]="'songs/other'"
-      [name]="'Песни, не вошедшие в альбомы'"
-    ></app-album-card>
-    <app-album-card
-      class="artist-page__col col"
-      [link]="'songs'"
-      [name]="'Все песни'"
-    ></app-album-card>
-    <app-album-card
-      class="artist-page__col col"
-      [link]="'video'"
-      [name]="'Клипы'"
-    ></app-album-card>
     <div class="artist-page__streaming-list col">
       <app-streaming-list [streaming]="streaming"></app-streaming-list>
     </div>
