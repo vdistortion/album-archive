@@ -13,6 +13,7 @@ export class AlbumCardComponent {
   @Input({ required: true }) public name: string;
   @Input() public image: string | undefined;
   @Input() public year: number = 0;
+  @Input() public thumbnail: boolean = false;
 
   get folder() {
     return this.image ?? '/artist/album-card.jpg';

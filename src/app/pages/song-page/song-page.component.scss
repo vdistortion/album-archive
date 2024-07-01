@@ -7,18 +7,16 @@
     position: relative;
   }
 
-  small {
-    white-space: pre-line;
-    color: #696c6f;
-    margin-top: 2px;
-    font-weight: 500;
-    line-height: 1.5;
-    font-size: 16px;
+  &__full {
+    @include size(24);
   }
 
-  pre {
-    line-height: 1.5;
-    font-size: 16px;
+  &__album {
+    @include size(4);
+    @include size-w992(6);
+    @include size-w768(8);
+    @include size-w480(12);
+    @include size-w320(24);
   }
 
   &__video {

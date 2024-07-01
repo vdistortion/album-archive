@@ -14,26 +14,8 @@
       }
       <small>{{ song?.authors }}</small>
       <pre>{{ song?.text | trim }}</pre>
-
-      @if (albums.length) {
-        @for (album of albums; track album.id) {
-          <div>
-            <strong>
-              {{ album.year }} —
-              <a [routerLink]="'/artist/' + artistId + '/album/' + album.id">
-                {{ album.name }}
-              </a>
-            </strong>
-          </div>
-        }
-      } @else {
-        <div>
-          <a [routerLink]="'/artist/' + artistId + '/songs/other'">
-            Песни, не вошедшие в альбомы
-          </a>
-        </div>
-      }
     </div>
+
     <div class="song-page__col col">
       @if (song?.clipYouTubeId) {
         <div class="song-page__video">
@@ -43,6 +25,32 @@
           ></youtube-player>
         </div>
       }
+    </div>
+
+    <div class="song-page__full col">
+      <div class="song-page__albums rows">
+        @if (albums.length) {
+          @for (album of albums; track album.id) {
+            <div class="song-page__album col">
+              <app-album-card
+                [name]="album.name"
+                [link]="'/artist/' + artistId + '/album/' + album.id"
+                [year]="album.year"
+                [image]="'.' + album.folder"
+                [thumbnail]="true"
+              ></app-album-card>
+            </div>
+          }
+        } @else {
+          <div class="song-page__album col">
+            <app-album-card
+              [link]="'/artist/' + artistId + '/songs/other'"
+              [name]="'Песни, не вошедшие в альбомы'"
+              [thumbnail]="true"
+            ></app-album-card>
+          </div>
+        }
+      </div>
     </div>
   </div>
 }
