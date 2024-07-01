@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['Spooky Scary Skeletons'],
   albums: [EnumAlbums.spookyScarySkeletons],
   clipYouTubeId: 'T_381kOAtTg',
+  duration: 134,
   text: `
 Spooky, scary skeletons
 Send shivers down your spine

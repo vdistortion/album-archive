@@ -19,7 +19,8 @@ export class AlbumPageComponent implements OnInit {
   public artistName: string = '';
   public artistId: string | null = null;
   public album: TypeAlbum | null = null;
-  public songs: (TypeSong | { name: string; id: string })[] = [];
+  public songs: (TypeSong | { name: string; id: string; duration: number })[] =
+    [];
 
   constructor(
     private route: ActivatedRoute,
@@ -42,16 +43,19 @@ export class AlbumPageComponent implements OnInit {
         return {
           id: song.id,
           name: song.name[0],
+          duration: song.duration ?? 0,
         };
       }
       if (Array.isArray(songId)) {
         const [id, { name }] = songId;
+        const song = artist.songs[id];
         return {
           id,
           name: name[0],
+          duration: song.duration ?? 0,
         };
       }
-      return { name: songId.name, id: '' };
+      return { name: songId.name, id: '', duration: 0 };
     });
   }
 
@@ -59,5 +63,11 @@ export class AlbumPageComponent implements OnInit {
     this.titleService.setTitle(
       `${this.album?.name} (${this.album?.year}) | ${this.artistName}`,
     );
+  }
+
+  getTime(duration: number): string {
+    const m = duration / 60;
+    const s = duration % 60;
+    return [Math.trunc(m), ('0' + s).slice(-2)].join(':');
   }
 }

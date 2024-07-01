@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.alabamaSong,
   name: ['Alabama Song'],
   albums: [EnumAlbums.mastermind],
+  duration: 170,
   text: `
 Well, show me the way
 To the next whiskey bar

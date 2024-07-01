@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['Clockwork God'],
   albums: [EnumAlbums.clockworkGod, EnumAlbums.burnTheCircus],
   clipYouTubeId: 'NhBBW-3x_9s',
+  duration: 270,
   text: `
 My clockwork is supreme
 It is Turing complete

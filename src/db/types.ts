@@ -40,6 +40,7 @@ export type TypeSong = {
   text: string;
   authors?: string;
   clipYouTubeId?: string;
+  duration?: number;
 };
 
 export type TypeSongs = Record<TypeId, TypeSong>;

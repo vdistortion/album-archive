@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.allTardigradesGoToHell,
   name: ['All Tardigrades go to Hell'],
   albums: [EnumAlbums.mastermind],
+  duration: 178,
   text: `
 Hello, hello, my darlings
 Ain’t that a lovely sight?

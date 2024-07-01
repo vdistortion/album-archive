@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['Hypnosis'],
   albums: [EnumAlbums.mastermind],
   clipYouTubeId: 'mbJ6x6HrXUM',
+  duration: 343,
   text: `
 A human mind - a fragile thing
 Its walls are weaker than you think

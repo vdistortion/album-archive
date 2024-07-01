@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.churchAsylum,
   name: ['Church Asylum'],
   albums: [EnumAlbums.mastermind],
+  duration: 244,
   text: `
 You want asylum?
 A church asylum?

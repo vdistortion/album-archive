@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['Arrival of a Train'],
   albums: [EnumAlbums.arrivalOfATrainSingle, EnumAlbums.arrivalOfATrain],
   clipYouTubeId: 'LAKEQqJ7FKk',
+  duration: 235,
   text: `
 It’s the arrival of a train
 To my forgotten lizard brain

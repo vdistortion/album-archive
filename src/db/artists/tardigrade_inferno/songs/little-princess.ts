@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.littlePrincess,
   name: ['Little Princess'],
   albums: [EnumAlbums.burnTheCircus],
+  duration: 284,
   text: `
 Little princess in the forest
 With so strange hypnotic eyes

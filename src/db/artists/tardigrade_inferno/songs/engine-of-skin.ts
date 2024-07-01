@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.engineOfSkin,
   name: ['Engine of Skin'],
   albums: [EnumAlbums.arrivalOfATrain],
+  duration: 261,
   text: `
 Are you in love with your engine of skin?
 Where does it end and you begin?

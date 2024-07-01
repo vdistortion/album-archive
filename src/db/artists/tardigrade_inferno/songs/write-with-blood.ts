@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['Write with Blood'],
   albums: [EnumAlbums.theWorstOfMe],
   clipYouTubeId: 'HbyaCInNiRA',
+  duration: 204,
   text: `
 You feel weaker with every passing day
 Feel new pain - you know it’s here to stay

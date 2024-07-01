@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.evoke,
   name: ['Evoke'],
   albums: [EnumAlbums.arrivalOfATrain],
+  duration: 257,
   text: `
 I’m dealing with a devil
 I wrote his name on the wall

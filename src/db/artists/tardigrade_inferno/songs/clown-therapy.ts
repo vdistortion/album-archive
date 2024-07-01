@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.clownTherapy,
   name: ['Clown Therapy'],
   albums: [EnumAlbums.mastermind],
+  duration: 228,
   text: `
 Don’t you cry and don’t you worry
 I will put on clown dress

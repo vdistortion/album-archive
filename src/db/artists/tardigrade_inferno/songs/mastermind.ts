@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.mastermind,
   name: ['Mastermind'],
   albums: [EnumAlbums.mastermind],
+  duration: 238,
   text: `
 The crazy scientist AKA Genius
 Is carrying a bucket of ice

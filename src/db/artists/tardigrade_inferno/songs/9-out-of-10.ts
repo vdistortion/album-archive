@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['9 out of 10'],
   albums: [EnumAlbums.burnTheCircus],
   clipYouTubeId: 'JoEULDNPL9s',
+  duration: 232,
   text: `
 Last thing I heard before I died
 Was 10 frightened doctors talking aside

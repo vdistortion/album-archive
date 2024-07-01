@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.tickTock,
   name: ['Tick-Tock'],
   albums: [EnumAlbums.burnTheCircus],
+  duration: 271,
   text: `
 Tick-tock, tick-tock
 Time is up, death-o-clock

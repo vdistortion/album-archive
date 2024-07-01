@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['We Are Number One'],
   albums: [EnumAlbums.mastermind],
   clipYouTubeId: 'mzJ4vCjSt28',
+  duration: 146,
   text: `
 We are number one!
 

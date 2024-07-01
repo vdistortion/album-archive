@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['На ладони планета'],
   albums: [EnumAlbums.spazmyRoka, EnumAlbums.poshmelye],
   authors: 'Шмель',
+  duration: 187,
   text: `
 Мне поля красивые,
 Небеса огромные

@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.plachSvireli,
   name: ['Плач свирели'],
   albums: [EnumAlbums.akustika],
+  duration: 234,
   text: `
 День как стекло разбила,
 Тень по стене размыла ночь,

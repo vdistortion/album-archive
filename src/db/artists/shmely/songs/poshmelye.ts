@@ -7,6 +7,7 @@ const song: TypeSong = {
   albums: [EnumAlbums.poshmelye],
   clipYouTubeId: 'ArmZpTJd4_0',
   authors: 'Стакан и Макс Экс - Макс Экс',
+  duration: 192,
   text: `
 Материки движутся по шельфу
 В стране (?) проживают эльфы

@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.splinterInTheEye,
   name: ['Splinter in the Eye'],
   albums: [EnumAlbums.burnTheCircus],
+  duration: 193,
   text: `
 Tell them “baby don’t you cry”
 Pat them on the shoulder

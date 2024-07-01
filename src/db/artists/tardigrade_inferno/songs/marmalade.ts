@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.marmalade,
   name: ['Marmalade'],
   albums: [EnumAlbums.mastermind],
+  duration: 184,
   text: `
 Stretching, filing, against her skin
 Blessed are those who are not kin

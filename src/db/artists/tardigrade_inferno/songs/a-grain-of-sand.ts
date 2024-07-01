@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.AGrainOfSand,
   name: ['A Grain of Sand'],
   albums: [EnumAlbums.tardigradeInferno],
+  duration: 252,
   text: `
 This night is long and dark, like the one before
 I spend them both with eyes open, lying on the floor

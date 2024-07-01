@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.underwaterValentine,
   name: ['Underwater Valentine'],
   albums: [EnumAlbums.tardigradeInferno],
+  duration: 224,
   text: `
 Lady, please Take my hand
 I have strong and steady grip

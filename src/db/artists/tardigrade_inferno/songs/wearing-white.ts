@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.wearingWhite,
   name: ['Wearing White'],
   albums: [EnumAlbums.burnTheCircus],
+  duration: 283,
   text: `
 Come out en masse, dance on the grass
 And feel the sunlight on your skin

@@ -9,6 +9,7 @@ const song: TypeSong = {
     EnumAlbums.risunkiNaDushe,
     EnumAlbums.poshmelye,
   ],
+  duration: 184,
   text: `
 Морфий, бинт и вата, –
 Уснула вся палата.

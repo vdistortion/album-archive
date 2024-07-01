@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.rats,
   name: ['Rats'],
   albums: [EnumAlbums.burnTheCircus],
+  duration: 193,
   text: `
 Big Rat City is in fear
 Rats began to disappear

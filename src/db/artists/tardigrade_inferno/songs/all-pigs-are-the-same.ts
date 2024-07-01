@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.allPigsAreTheSame,
   name: ['All Pigs are the Same'],
   albums: [EnumAlbums.mastermind],
+  duration: 203,
   text: `
 I’m here for the tribute
 From farmers all around

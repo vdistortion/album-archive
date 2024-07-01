@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.novayaReligiya,
   name: ['Новая религия'],
   albums: [EnumAlbums.spazmyRoka, EnumAlbums.poshmelye],
+  duration: 183,
   text: `
 Человеческое тесто,
 Ритуальная невеста,

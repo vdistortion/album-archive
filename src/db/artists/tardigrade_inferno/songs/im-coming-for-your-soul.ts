@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.imComingForYourSoul,
   name: ['I`m Coming for Your Soul'],
   albums: [EnumAlbums.mastermind],
+  duration: 282,
   text: `
 The crowd is a monster, It’s drinking and laughing
 It's loudly discussing Your age

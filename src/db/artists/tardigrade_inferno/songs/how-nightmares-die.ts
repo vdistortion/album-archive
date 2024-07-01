@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['How Nightmares Die'],
   albums: [EnumAlbums.howNightmaresDie],
   clipYouTubeId: 'sR7HHmJ4Jk4',
+  duration: 147,
   text: `
 Lightning outside my window
 Shines on her face

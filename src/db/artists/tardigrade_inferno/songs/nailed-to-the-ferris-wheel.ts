@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.nailedToTheFerrisWheel,
   name: ['Nailed to the Ferris Wheel'],
   albums: [EnumAlbums.burnTheCircus],
+  duration: 236,
   text: `
 Look how it turns around
 Step on the fairground

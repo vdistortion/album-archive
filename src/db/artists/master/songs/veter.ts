@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.veter,
   name: ['Ветер'],
   albums: [EnumAlbums.akustika],
+  duration: 117,
   text: `
 Здравствуй, брат, рано нас хоронят,
 Знаешь ты, как весною ноют раны,

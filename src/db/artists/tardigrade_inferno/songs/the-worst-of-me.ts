@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['The Worst of Me'],
   albums: [EnumAlbums.theWorstOfMe],
   clipYouTubeId: '-ZmFGFufDDE',
+  duration: 205,
   text: `
 I was walking through the park
 Fast and light

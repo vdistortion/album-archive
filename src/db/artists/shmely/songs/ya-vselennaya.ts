@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['Я – Вселенная'],
   albums: [EnumAlbums.spazmyRoka, EnumAlbums.poshmelye],
   authors: 'Шмель',
+  duration: 196,
   text: `
 Когда умирает свет,
 Лишь праздно ликует неон,

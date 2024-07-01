@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['Execution is fun!'],
   albums: [EnumAlbums.executionIsFun],
   clipYouTubeId: 'DrnKM4mGDIQ',
+  duration: 207,
   text: `
 Execution’s fun
 I think that you should come

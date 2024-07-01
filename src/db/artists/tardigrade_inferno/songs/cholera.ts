@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.cholera,
   name: ['Cholera'],
   albums: [EnumAlbums.burnTheCircus],
+  duration: 246,
   text: `
 Is this help sign big enough?
 I’m holding it above my head,

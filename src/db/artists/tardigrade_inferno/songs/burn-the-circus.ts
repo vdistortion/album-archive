@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.burnTheCircus,
   name: ['Burn the Circus'],
   albums: [EnumAlbums.burnTheCircus],
+  duration: 225,
   text: `
 Once upon an early autumn
 As the rain was pouring down

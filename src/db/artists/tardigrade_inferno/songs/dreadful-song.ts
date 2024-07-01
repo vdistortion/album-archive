@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.dreadfulSong,
   name: ['Dreadful Song'],
   albums: [EnumAlbums.mastermind],
+  duration: 187,
   text: `
 Life is not fair
 People everywhere

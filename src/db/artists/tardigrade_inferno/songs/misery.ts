@@ -6,6 +6,7 @@ const song: TypeSong = {
   name: ['Misery'],
   albums: [],
   clipYouTubeId: 'UdzmAxVGwCw',
+  duration: 253,
   text: `
 The drunken sailors come by
 Desperate lost and frisky

@@ -10,6 +10,7 @@ const song: TypeSong = {
     EnumAlbums.burnTheCircus,
   ],
   clipYouTubeId: 'hh3kZP4kNsE',
+  duration: 278,
   text: `
 It's an absurdity, it's his fault
 It was just an innocent somersault

@@ -19,6 +19,9 @@
             <a [routerLink]="'/artist/' + artistId + '/song/' + song.id">
               {{ song.name }}
             </a>
+            @if (song.duration) {
+              ({{ getTime(song.duration) }})
+            }
           } @else {
             {{ i + 1 }}. <span>{{ song.name }}</span>
           }
