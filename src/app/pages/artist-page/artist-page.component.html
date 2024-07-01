@@ -1,33 +1,31 @@
-<div class="artist-page">
-  @if (artistName) {
-    <div class="artist-page__wrap rows">
-      @for (album of albums; track album.id) {
-        <app-album-card
-          class="artist-page__col col"
-          [link]="'album/' + album.id"
-          [name]="album.name"
-          [year]="album.year"
-          [image]="album.folder"
-        ></app-album-card>
-      }
+@if (artistName) {
+  <div class="artist-page rows">
+    @for (album of albums; track album.id) {
       <app-album-card
         class="artist-page__col col"
-        [link]="'songs/other'"
-        [name]="'Песни, не вошедшие в альбомы'"
+        [link]="'album/' + album.id"
+        [name]="album.name"
+        [year]="album.year"
+        [image]="album.folder"
       ></app-album-card>
-      <app-album-card
-        class="artist-page__col col"
-        [link]="'songs'"
-        [name]="'Все песни'"
-      ></app-album-card>
-      <app-album-card
-        class="artist-page__col col"
-        [link]="'video'"
-        [name]="'Клипы'"
-      ></app-album-card>
-      <div class="artist-page__streaming-list col">
-        <app-streaming-list [streaming]="streaming"></app-streaming-list>
-      </div>
+    }
+    <app-album-card
+      class="artist-page__col col"
+      [link]="'songs/other'"
+      [name]="'Песни, не вошедшие в альбомы'"
+    ></app-album-card>
+    <app-album-card
+      class="artist-page__col col"
+      [link]="'songs'"
+      [name]="'Все песни'"
+    ></app-album-card>
+    <app-album-card
+      class="artist-page__col col"
+      [link]="'video'"
+      [name]="'Клипы'"
+    ></app-album-card>
+    <div class="artist-page__streaming-list col">
+      <app-streaming-list [streaming]="streaming"></app-streaming-list>
     </div>
-  }
-</div>
+  </div>
+}

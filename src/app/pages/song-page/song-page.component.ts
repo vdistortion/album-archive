@@ -3,13 +3,14 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { YouTubePlayer } from '@angular/youtube-player';
 import { Title } from '@angular/platform-browser';
 import { ArtistService } from '../../services/artist.service';
+import { TrimPipe } from '../../trim.pipe';
 import artists from '../../../db';
 import { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
 @Component({
   selector: 'app-song-page',
   standalone: true,
-  imports: [RouterLink, YouTubePlayer],
+  imports: [RouterLink, TrimPipe, YouTubePlayer],
   templateUrl: './song-page.component.html',
   styleUrl: './song-page.component.scss',
 })

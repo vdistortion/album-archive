@@ -1,6 +1,6 @@
 @if (artistName) {
-  <div class="song-page">
-    <div class="song-page__col">
+  <div class="song-page rows">
+    <div class="song-page__col col">
       @if (song?.name) {
         @for (name of song?.name; track name; let index = $index) {
           @if (index) {
@@ -13,30 +13,28 @@
         }
       }
       <small>{{ song?.authors }}</small>
-      <pre>{{ song?.text }}</pre>
+      <pre>{{ song?.text | trim }}</pre>
 
       @if (albums.length) {
         @for (album of albums; track album.id) {
-          <div class="song-page__item">
+          <div>
             <strong>
               {{ album.year }} —
-              <span>
-                <a [routerLink]="'/artist/' + artistId + '/album/' + album.id">
-                  {{ album.name }}
-                </a>
-              </span>
+              <a [routerLink]="'/artist/' + artistId + '/album/' + album.id">
+                {{ album.name }}
+              </a>
             </strong>
           </div>
         }
       } @else {
-        <div class="song-page__item">
+        <div>
           <a [routerLink]="'/artist/' + artistId + '/songs/other'">
             Песни, не вошедшие в альбомы
           </a>
         </div>
       }
     </div>
-    <div class="song-page__col">
+    <div class="song-page__col col">
       @if (song?.clipYouTubeId) {
         <div class="song-page__video">
           <youtube-player

@@ -3,13 +3,14 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { StreamingListComponent } from '../../components/ui/streaming-list/streaming-list.component';
 import { ArtistService } from '../../services/artist.service';
+import { TrimPipe } from '../../trim.pipe';
 import artists from '../../../db';
 import { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
 @Component({
   selector: 'app-album-page',
   standalone: true,
-  imports: [RouterLink, StreamingListComponent],
+  imports: [RouterLink, TrimPipe, StreamingListComponent],
   templateUrl: './album-page.component.html',
   styleUrl: './album-page.component.scss',
 })

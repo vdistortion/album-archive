@@ -1,53 +1,44 @@
 @import '../../../grid';
 
 .album-page {
-  &__folder-wrap {
-    max-width: 500px;
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
-
-    @include w768-block() {
-      float: none;
-      margin: 0;
-    }
+  &__item {
+    @include size(24);
   }
 
   &__folder {
-    max-width: 100%;
+    max-width: 400px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    @include w768-block() {
+      float: none;
+      margin-left: 0;
+      line-height: 1;
+    }
   }
 
-  &__item {
+  &__year {
+    display: block;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #696c6f;
+  }
+
+  &__song {
     line-height: 1.8;
 
-    span {
+    span,
+    a {
       margin-left: 5px;
     }
 
     a {
-      margin-left: 5px;
       text-decoration: none;
       border-bottom: 1px solid var(--hover-text);
-    }
-  }
-
-  h3 {
-    font-weight: 800;
-    line-height: 1.1;
-    font-size: 30px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    max-width: 840px;
-    margin-top: 42px;
-
-    span {
-      display: block;
-      font-weight: 700;
-      line-height: 1.5;
-      font-size: 20px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #696c6f;
     }
   }
 }

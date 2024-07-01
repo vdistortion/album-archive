@@ -1,14 +1,15 @@
-<div class="songs-page">
-  @if (artistName) {
-    <div class="songs-page__wrap">
-      @for (song of songs; track song.id; let i = $index) {
-        <div class="songs-page__item">
-          {{ i + 1 }}.
-          <a [routerLink]="'/artist/' + artistId + '/song/' + song.id">
-            {{ song.name[0] }}
-          </a>
-        </div>
-      }
+@if (artistName) {
+  <div class="songs-page rows">
+    <div class="songs-page__item col">
+      <h3>Все песни</h3>
     </div>
-  }
-</div>
+    @for (song of songs; track song.id; let i = $index) {
+      <div class="songs-page__item col">
+        {{ i + 1 }}.
+        <a [routerLink]="'/artist/' + artistId + '/song/' + song.id">
+          {{ song.name[0] }}
+        </a>
+      </div>
+    }
+  </div>
+}

@@ -1,5 +1,8 @@
+@import '../../../grid';
+
 .other-songs-page {
   &__item {
+    @include size(24);
     line-height: 1.8;
 
     a {

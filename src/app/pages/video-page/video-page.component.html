@@ -1,23 +1,22 @@
-<div class="video-page">
-  @if (artistName) {
-    <div class="video-page__wrap">
-      @for (song of songs; track song.id) {
-        <div class="video-page__item">
-          <div class="video-page__player">
-            <youtube-player
-              [videoId]="song.clipYouTubeId"
-              placeholderImageQuality="low"
-              (stateChange)="stateChange($event)"
-            ></youtube-player>
-          </div>
-          <a
-            class="video-page__title"
-            [routerLink]="'/artist/' + artistId + '/song/' + song.id"
-          >
-            {{ song.name }}
-          </a>
+@if (artistName) {
+  <div class="video-page rows">
+    <h3 class="col">Клипы</h3>
+    @for (song of songs; track song.id) {
+      <div class="video-page__item col">
+        <div class="video-page__player">
+          <youtube-player
+            [videoId]="song.clipYouTubeId"
+            placeholderImageQuality="low"
+            (stateChange)="stateChange($event)"
+          ></youtube-player>
         </div>
-      }
-    </div>
-  }
-</div>
+        <a
+          class="video-page__title"
+          [routerLink]="'/artist/' + artistId + '/song/' + song.id"
+        >
+          {{ song.name }}
+        </a>
+      </div>
+    }
+  </div>
+}

@@ -1,21 +1,19 @@
-<div class="album-page">
-  @if (artistName) {
-    <div class="album-page__wrap">
+@if (artistName) {
+  <div class="album-page rows">
+    <div class="album-page__item col">
       @if (album && album.folder) {
-        <div class="album-page__folder-wrap">
-          <img
-            class="album-page__folder"
-            [src]="'.' + album.folder"
-            [alt]="album.name"
-          />
+        <div class="album-page__folder">
+          <img [src]="'.' + album.folder" [alt]="album.name" />
         </div>
       }
+
       <h3>
         {{ album?.name }}
-        <span>{{ album?.year }}</span>
+        <span class="album-page__year">{{ album?.year }}</span>
       </h3>
+
       @for (song of songs; track song.id || song.name; let i = $index) {
-        <div class="album-page__item">
+        <div class="album-page__song">
           @if (song.id) {
             {{ i + 1 }}.
             <a [routerLink]="'/artist/' + artistId + '/song/' + song.id">
@@ -26,10 +24,12 @@
           }
         </div>
       }
+
       @if (album?.info) {
-        <pre>{{ album?.info }}</pre>
+        <pre>{{ album?.info | trim }}</pre>
       }
+
       <app-streaming-list [streaming]="album?.streaming"></app-streaming-list>
     </div>
-  }
-</div>
+  </div>
+}
