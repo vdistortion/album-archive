@@ -15,6 +15,9 @@
           [routerLink]="'/artist/' + artistId + '/song/' + song.id"
         >
           {{ song.name }}
+          @if (artist.yearOfSong(song)) {
+            <span class="video-page__year">{{ artist.yearOfSong(song) }}</span>
+          }
         </a>
       </div>
     }

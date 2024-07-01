@@ -58,7 +58,7 @@ const artist: TypeArtist = {
 
 class Artist extends ArtistClass {
   artist = artist;
-  albums = albums;
+  override albums = albums;
   override songs = songs;
 }
 

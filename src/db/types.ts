@@ -53,6 +53,8 @@ export type TypeItem = {
   getSongsWithoutAlbum(): TypeSong[];
   getAllVideos(): TypeSong[];
   sortAsc(a: TypeSong, b: TypeSong): number;
+  sortByYears(a: TypeSong, b: TypeSong): number;
+  yearOfSong(song: TypeSong): number;
 };
 
 export type TypeItems = Record<TypeId, TypeItem>;

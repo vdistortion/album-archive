@@ -15,6 +15,7 @@ import { TypeItem, TypeItems, TypeSong } from '../../../db/types';
 })
 export class VideoPageComponent implements OnInit {
   public artists: TypeItems = artists;
+  public artist: TypeItem;
   public artistName: string = '';
   public artistId: string | null = null;
   public songs: TypeSong[] = [];
@@ -30,9 +31,11 @@ export class VideoPageComponent implements OnInit {
     this.artistId = this.route.snapshot.paramMap.get('artist');
     if (!this.artistId) return;
 
-    const artist: TypeItem = this.artists[this.artistId];
-    this.artistName = artist.artist.name;
-    this.songs = artist.getAllVideos().sort(artist.sortAsc);
+    this.artist = this.artists[this.artistId];
+    this.artistName = this.artist.artist.name;
+    this.songs = this.artist
+      .getAllVideos()
+      .sort(this.artist.sortByYears.bind(this.artist));
   }
 
   ngOnInit(): void {
