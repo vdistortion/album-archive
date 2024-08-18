@@ -1,0 +1,11 @@
+@if (artistId) {
+  <div class="images-page">
+    @for (item of images; track item) {
+      <app-gallery
+        [pictures]="item.pictures"
+        [path]="item.path.join('/')"
+        [id]="artistId"
+      ></app-gallery>
+    }
+  </div>
+}

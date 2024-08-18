@@ -1,6 +1,6 @@
 import { TypeAlbum, TypeSong } from './types';
 
-export class ArtistClass {
+export abstract class ArtistClass {
   songs: Record<string, TypeSong> = {};
   albums: Record<string, TypeAlbum> = {};
 

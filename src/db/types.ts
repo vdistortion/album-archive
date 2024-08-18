@@ -12,11 +12,23 @@ type SongPlaceholder = TypeId | { name: string } | [TypeId, { name: string[] }];
 
 export type TypeStreaming = Partial<Record<TypeStreamingList, string>>;
 
+export type TypeStructure = {
+  type: string;
+  name: string;
+  children?: TypeStructure[];
+};
+
+export type TypeStructurePictures = {
+  path: string[];
+  pictures: string[];
+};
+
 export type TypeArtist = {
   id: TypeId;
   name: string;
   albums: TypeId[];
   image: string;
+  images?: TypeStructurePictures[];
   streaming?: TypeStreaming;
 };
 

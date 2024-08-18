@@ -1,13 +1,47 @@
-import { TypeArtist } from '../../types';
+import { TypeArtist, TypeStructure, TypeStructurePictures } from '../../types';
 import { ArtistClass } from '../../artist.class';
 import albums from './albums';
 import songs from './songs';
 import { EnumAlbums, EnumArtist } from './types';
+import images from './images.json';
+
+function transformStructure(
+  structure: TypeStructure[],
+  currentPath: string[] = [],
+): TypeStructurePictures[] {
+  const result = [];
+
+  for (const entity of structure) {
+    const newPath = [...currentPath, entity.name];
+
+    if (entity.children && entity.type === 'folder') {
+      // Проверяем, есть ли у папки файлы
+      const pictures = entity.children
+        .filter((child: TypeStructure) => child.type === 'file')
+        .map((file: TypeStructure) => file.name);
+
+      // Добавляем информацию о текущей папке в результат
+      if (pictures.length > 0) {
+        result.push({
+          path: newPath,
+          pictures,
+        });
+      }
+
+      // Рекурсивно обрабатываем дочерние элементы
+      const subResults = transformStructure(entity.children, newPath);
+      result.push(...subResults);
+    }
+  }
+
+  return result;
+}
 
 const artist: TypeArtist = {
   id: EnumArtist.id,
   name: EnumArtist.name,
   image: '/artist/shmely/artist.webp',
+  images: transformStructure(images),
   streaming: {
     spotify: 'https://open.spotify.com/artist/4OXVjz9BARB2MwT6sdx8JE',
     youtube: 'https://www.youtube.com/channel/UCZkpG0pk3z1LondQYU_11Iw',

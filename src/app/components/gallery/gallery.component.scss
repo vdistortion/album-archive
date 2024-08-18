@@ -1,0 +1,7 @@
+@import '../../../grid';
+
+.gallery {
+  &__item {
+    @include size(8);
+  }
+}

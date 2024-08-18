@@ -12,6 +12,11 @@
       >
         <a [routerLink]="'/artist/' + artistId">Дискография</a>
       </li>
+      @if (isImages) {
+        <li [routerLinkActive]="'active'">
+          <a [routerLink]="'/artist/' + artistId + '/images'">Фото</a>
+        </li>
+      }
       <li [routerLinkActive]="'active'">
         <a [routerLink]="'/artist/' + artistId + '/songs'">Тексты песен</a>
       </li>
