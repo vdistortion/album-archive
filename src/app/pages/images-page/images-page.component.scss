@@ -1,0 +1,10 @@
+@import '../../../grid';
+
+.images-page {
+  &__col {
+    @include size(6);
+    @include size-w992(8);
+    @include size-w768(12);
+    @include size-w480(24);
+  }
+}

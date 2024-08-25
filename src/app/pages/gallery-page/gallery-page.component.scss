@@ -1,0 +1,13 @@
+.gallery-page {
+  &__images {
+    column-count: 3;
+    grid-gap: 5px;
+  }
+
+  &__image {
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

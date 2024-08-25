@@ -7,6 +7,7 @@ import { SongsPageComponent } from './pages/songs-page/songs-page.component';
 import { OtherSongsPageComponent } from './pages/other-songs-page/other-songs-page.component';
 import { VideoPageComponent } from './pages/video-page/video-page.component';
 import { ImagesPageComponent } from './pages/images-page/images-page.component';
+import { GalleryPageComponent } from './pages/gallery-page/gallery-page.component';
 
 export const routes: Routes = [
   {
@@ -24,6 +25,10 @@ export const routes: Routes = [
   {
     path: 'artist/:artist/images',
     component: ImagesPageComponent,
+  },
+  {
+    path: 'artist/:artist/images/:gallery',
+    component: GalleryPageComponent,
   },
   {
     path: 'artist/:artist/songs',

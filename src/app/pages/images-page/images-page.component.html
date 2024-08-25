@@ -1,11 +1,19 @@
 @if (artistId) {
-  <div class="images-page">
-    @for (item of images; track item) {
-      <app-gallery
-        [pictures]="item.pictures"
-        [path]="item.path.join('/')"
-        [id]="artistId"
-      ></app-gallery>
+  <div class="images-page rows">
+    @for (item of images; track item; let index = $index) {
+      <app-gallery-card
+        class="images-page__col col"
+        [link]="index + ''"
+        [name]="item.path[item.path.length - 1]"
+        [image]="
+          '/artist/' +
+          artistId +
+          '/images/' +
+          item.path.join('/') +
+          '/' +
+          item.pictures[0]
+        "
+      ></app-gallery-card>
     }
   </div>
 }
