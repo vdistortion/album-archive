@@ -1,4 +1,9 @@
-import { TypeArtist, TypeStructure, TypeStructurePictures } from '../../types';
+import {
+  Countries,
+  TypeArtist,
+  TypeStructure,
+  TypeStructurePictures,
+} from '../../types';
 import { ArtistClass } from '../../artist.class';
 import albums from './albums';
 import songs from './songs';
@@ -42,6 +47,7 @@ const artist: TypeArtist = {
   name: EnumArtist.name,
   image: '/artist/shmely/artist.webp',
   images: transformStructure(images),
+  country: [Countries.ua, Countries.ru],
   streaming: {
     spotify: 'https://open.spotify.com/artist/4OXVjz9BARB2MwT6sdx8JE',
     youtube: 'https://www.youtube.com/channel/UCZkpG0pk3z1LondQYU_11Iw',

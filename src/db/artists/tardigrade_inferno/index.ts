@@ -1,4 +1,4 @@
-import { TypeArtist } from '../../types';
+import { Countries, TypeArtist } from '../../types';
 import { ArtistClass } from '../../artist.class';
 import albums from './albums';
 import songs from './songs';
@@ -8,6 +8,7 @@ const artist: TypeArtist = {
   id: EnumArtist.id,
   name: EnumArtist.name,
   image: '/artist/tardigrade_inferno/artist.webp',
+  country: [Countries.ru],
   streaming: {
     spotify: 'https://open.spotify.com/artist/12ZMAQkYyLSuNLvjbySISC',
     appleMusic:

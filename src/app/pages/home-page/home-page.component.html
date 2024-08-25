@@ -3,7 +3,12 @@
     <div class="home-page__item col">
       <a class="home-page__link" [routerLink]="'artist/' + artist.id">
         <img [src]="'.' + artist.image" [alt]="artist.name" />
-        <h3 class="home-page__name">{{ artist.name }}</h3>
+        <div class="home-page__name">{{ artist.name }}</div>
+        @if (artist.country) {
+          <div class="home-page__countries">
+            {{ artist.country.join(', ') }}
+          </div>
+        }
       </a>
     </div>
   }

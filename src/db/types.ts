@@ -1,5 +1,11 @@
 type TypeId = string;
 
+export const enum Countries {
+  de = 'Германия',
+  ru = 'Россия',
+  ua = 'Украина',
+}
+
 export type TypeStreamingList =
   | 'spotify'
   | 'bandcamp'
@@ -30,6 +36,7 @@ export type TypeArtist = {
   image: string;
   images?: TypeStructurePictures[];
   streaming?: TypeStreaming;
+  country?: string[];
 };
 
 export type TypeAlbum = {

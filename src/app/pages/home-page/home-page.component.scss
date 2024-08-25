@@ -12,9 +12,24 @@
   }
 
   &__name {
-    font-size: 18px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     transition: color 0.3s ease;
-    margin-top: 10px;
+    margin-top: 14px;
+  }
+
+  &__countries {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #696c6f;
     margin-bottom: 20px;
   }
 }
