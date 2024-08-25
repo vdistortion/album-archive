@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import { PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
 import { ArtistService } from '../../services/artist.service';
 import artists from '../../../db';
 import type { TypeItems } from '../../../db/types';
@@ -8,7 +9,7 @@ import type { TypeItems } from '../../../db/types';
 @Component({
   selector: 'app-gallery-page',
   standalone: true,
-  imports: [],
+  imports: [PhotoGalleryModule],
   templateUrl: './gallery-page.component.html',
   styleUrl: './gallery-page.component.scss',
 })

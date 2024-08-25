@@ -1,9 +1,10 @@
 <div class="gallery-page">
   <h3>{{ galleryName }}</h3>
-  <div class="gallery-page__images">
+  <div class="gallery-page__images" [photoGalleryGroup]="{}">
     @for (picture of pictures; track picture) {
       <img
         class="gallery-page__image"
+        [photoGallery]="'/artist/' + id + '/images/' + path + '/' + picture"
         [src]="'/artist/' + id + '/images/' + path + '/' + picture"
         [alt]="picture"
       />
