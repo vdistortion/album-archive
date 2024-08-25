@@ -2,8 +2,11 @@
   <div class="songs-page rows">
     <div class="songs-page__item col">
       <h3>
-        <span>Все песни</span> |
-        <a [routerLink]="'other'">Песни, не вошедшие в альбомы</a>
+        <span>Все песни</span>
+        @if (isOtherSongs) {
+          |
+          <a [routerLink]="'other'">Песни, не вошедшие в альбомы</a>
+        }
       </h3>
     </div>
     @for (song of songs; track song.id; let i = $index) {

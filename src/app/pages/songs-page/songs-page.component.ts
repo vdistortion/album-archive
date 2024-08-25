@@ -17,6 +17,7 @@ export class SongsPageComponent implements OnInit {
   public artistName: string = '';
   public artistId: string | null = null;
   public songs: TypeSong[] = [];
+  public isOtherSongs: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -32,6 +33,7 @@ export class SongsPageComponent implements OnInit {
     const artist: TypeItem = this.artists[this.artistId];
     this.artistName = artist.artist.name;
     this.songs = artist.getSongsWithTexts().sort(artist.sortAsc);
+    this.isOtherSongs = artist.getSongsWithoutAlbum().length > 0;
   }
 
   ngOnInit(): void {
