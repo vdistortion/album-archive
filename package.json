@@ -2,6 +2,7 @@
   "name": "album-archive",
   "version": "0.0.1",
   "scripts": {
+    "prepare": "cp -n src/environments/environment.ts src/environments/environment.development.ts",
     "ng": "ng",
     "start": "nx serve --host 0.0.0.0",
     "build": "nx build",
