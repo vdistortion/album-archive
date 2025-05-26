@@ -1,8 +1,7 @@
 @if (artistId) {
-  <div class="images-page rows">
+  <div class="images-page">
     @for (item of images; track item; let index = $index) {
       <app-gallery-card
-        class="images-page__col col"
         [link]="index + ''"
         [name]="item.path[item.path.length - 1]"
         [image]="

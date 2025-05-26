@@ -9,7 +9,6 @@
     "watch": "nx build --watch --configuration development",
     "public": "nx deploy",
     "test": "nx test",
-    "grid": "tsx grid.ts && npx sass-migrator division src/_grid.scss && prettier --write src/_grid.scss",
     "grep": "sh grep.sh",
     "format": "prettier . --write"
   },
@@ -48,8 +47,6 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "nx": "19.7.3",
     "prettier": "3.3.3",
-    "smart-grid": "^2.1.2",
-    "tsx": "^4.18.0",
     "typescript": "~5.5.2"
   }
 }

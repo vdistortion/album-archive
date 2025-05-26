@@ -1,17 +1,11 @@
-@import '../../../grid';
-
 .album-page {
-  &__item {
-    @include size(24);
-  }
-
   &__folder {
     max-width: 400px;
     float: right;
     margin-left: 20px;
     margin-bottom: 20px;
 
-    @include w768-block() {
+    @media (max-width: 768px) {
       float: none;
       margin-left: 0;
       line-height: 1;

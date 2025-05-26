@@ -1,16 +1,16 @@
 @if (artistName) {
-  <div class="artist-page rows">
+  <div class="artist-page">
     @for (album of albums; track album.id) {
       <app-album-card
-        class="artist-page__col col"
         [link]="'album/' + album.id"
         [name]="album.name"
         [year]="album.year"
         [image]="album.folder"
       ></app-album-card>
     }
-    <div class="artist-page__streaming-list col">
-      <app-streaming-list [streaming]="streaming"></app-streaming-list>
-    </div>
+    <app-streaming-list
+      class="artist-page__streaming-list"
+      [streaming]="streaming"
+    ></app-streaming-list>
   </div>
 }

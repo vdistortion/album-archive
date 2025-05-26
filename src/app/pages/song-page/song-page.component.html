@@ -1,6 +1,6 @@
 @if (artistName) {
-  <div class="song-page rows">
-    <div class="song-page__col col">
+  <div class="song-page">
+    <div class="song-page__col">
       @if (song?.name) {
         @for (name of song?.name; track name; let index = $index) {
           @if (index) {
@@ -16,7 +16,7 @@
       <pre>{{ song?.text | trim }}</pre>
     </div>
 
-    <div class="song-page__col col">
+    <div class="song-page__col">
       @if (song?.clipYouTubeId) {
         <div class="song-page__video">
           <youtube-player
@@ -27,11 +27,11 @@
       }
     </div>
 
-    <div class="song-page__full col">
-      <div class="song-page__albums rows">
+    <div class="song-page__full">
+      <div class="song-page__albums">
         @if (albums.length) {
           @for (album of albums; track album.id) {
-            <div class="song-page__album col">
+            <div class="song-page__album">
               <app-album-card
                 [name]="album.name"
                 [link]="'/artist/' + artistId + '/album/' + album.id"
@@ -42,7 +42,7 @@
             </div>
           }
         } @else {
-          <div class="song-page__album col">
+          <div class="song-page__album">
             <app-album-card
               [link]="'/artist/' + artistId + '/songs/other'"
               [name]="'Песни, не вошедшие в альбомы'"

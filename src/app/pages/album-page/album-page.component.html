@@ -1,6 +1,6 @@
 @if (artistName) {
-  <div class="album-page rows">
-    <div class="album-page__item col">
+  <div class="album-page">
+    <div class="album-page__item">
       @if (album && album.folder) {
         <div class="album-page__folder">
           <img [src]="'.' + album.folder" [alt]="album.name" />

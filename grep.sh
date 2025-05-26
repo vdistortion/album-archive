@@ -4,7 +4,7 @@
 cd ${PWD}
 
 # Список каталогов, в которых искать не нужно
-for var in node_modules dist .angular .git .idea .vscode; do
+for var in node_modules dist .angular .nx .git .idea .vscode; do
   exclude=$exclude"--exclude-dir="$var" "
 done
 

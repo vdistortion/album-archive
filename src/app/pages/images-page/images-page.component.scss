@@ -1,10 +1,16 @@
-@import '../../../grid';
-
 .images-page {
-  &__col {
-    @include size(6);
-    @include size-w992(8);
-    @include size-w768(12);
-    @include size-w480(24);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

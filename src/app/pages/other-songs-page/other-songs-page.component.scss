@@ -1,13 +1,10 @@
-@import '../../../grid';
-
 .other-songs-page {
   &__item {
-    @include size(24);
     line-height: 1.8;
   }
 
   h3 {
-    @include w480-block() {
+    @media (max-width: 480px) {
       font-size: 18px;
     }
 
