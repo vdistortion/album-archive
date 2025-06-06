@@ -6,11 +6,7 @@ const album: TypeAlbum = {
   name: 'Tardigrade Inferno',
   year: 2016,
   folder: '/artist/tardigrade_inferno/albums/2016_ti.jpg',
-  songs: [
-    EnumSongs.lovelyHost,
-    EnumSongs.AGrainOfSand,
-    EnumSongs.underwaterValentine,
-  ],
+  songs: [EnumSongs.lovelyHost, EnumSongs.AGrainOfSand, EnumSongs.underwaterValentine],
   info: `
   `,
 };

@@ -4,14 +4,7 @@
       <app-gallery-card
         [link]="index + ''"
         [name]="item.path[item.path.length - 1]"
-        [image]="
-          '/artist/' +
-          artistId +
-          '/images/' +
-          item.path.join('/') +
-          '/' +
-          item.pictures[0]
-        "
+        [image]="'/artist/' + artistId + '/images/' + item.path.join('/') + '/' + item.pictures[0]"
       ></app-gallery-card>
     }
   </div>

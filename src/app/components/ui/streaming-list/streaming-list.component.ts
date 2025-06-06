@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { TypeStreaming, TypeStreamingList } from '../../../../db/types';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import type { TypeStreaming, TypeStreamingList } from '../../../../db/types';
 
 type TypeStreamingItem = {
   name: string;
@@ -8,18 +8,15 @@ type TypeStreamingItem = {
 
 @Component({
   selector: 'app-streaming-list',
-  standalone: true,
   imports: [],
   templateUrl: './streaming-list.component.html',
   styleUrl: './streaming-list.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class StreamingListComponent {
   @Input({ required: true }) public streaming: TypeStreaming | undefined;
 
-  protected readonly streamingList: Record<
-    TypeStreamingList,
-    TypeStreamingItem
-  > = {
+  protected readonly streamingList: Record<TypeStreamingList, TypeStreamingItem> = {
     spotify: {
       name: 'Spotify',
       image: 'spotify.svg',
@@ -49,9 +46,10 @@ export class StreamingListComponent {
   get list() {
     if (!this.streaming) return [];
 
-    const list: [TypeStreamingList, string][] = Object.entries(
-      this.streaming,
-    ) as [TypeStreamingList, string][];
+    const list: [TypeStreamingList, string][] = Object.entries(this.streaming) as [
+      TypeStreamingList,
+      string,
+    ][];
 
     return list.map(([id, link]) => {
       const { name, image } = this.streamingList[id];

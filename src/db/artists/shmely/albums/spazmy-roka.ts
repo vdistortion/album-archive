@@ -8,8 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/shmely/albums/2001_spazmi.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/28tVBP8rDTC3eLMVzOAZ5m',
-    youtube:
-      'https://www.youtube.com/playlist?list=OLAK5uy_l79--sEsZYpEuVcmBME0YHVr2cHd5B22U',
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_l79--sEsZYpEuVcmBME0YHVr2cHd5B22U',
     youtubeMusic:
       'https://music.youtube.com/playlist?list=OLAK5uy_noWkxPhjlR4FF4_LZCf6WX1ztDral0UMg',
     yandexMusic: 'https://music.yandex.ru/album/3444133',

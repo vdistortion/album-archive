@@ -5,8 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.kultDerKrHe,
   name: 'Kult der Krähe',
   year: 2018,
-  folder:
-    '/artist/schwarzer_engel/albums/ab67616d0000b27312a11ea6f8478342d91aee17.jpg',
+  folder: '/artist/schwarzer_engel/albums/ab67616d0000b27312a11ea6f8478342d91aee17.jpg',
   songs: [
     EnumSongs.krHenAnDieMacht,
     { name: 'Viva La Musica' },

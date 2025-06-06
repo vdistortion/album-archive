@@ -8,8 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/shmely/albums/2009_myau.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/0wzOwUeEa3fVPI77pJRK8E',
-    youtube:
-      'https://www.youtube.com/playlist?list=OLAK5uy_loV5x6XOgMrmUH5w9d1IlTiuF_jGr3ll8',
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_loV5x6XOgMrmUH5w9d1IlTiuF_jGr3ll8',
     youtubeMusic:
       'https://music.youtube.com/playlist?list=OLAK5uy_nH21z5pDqYVpk4W06KePL0KE-pMCeRVCw',
     yandexMusic: 'https://music.yandex.ru/album/3444131',

@@ -8,8 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/shmely/albums/2013_para.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/6AfviE2K704Bym6YNCdMMk',
-    youtube:
-      'https://www.youtube.com/playlist?list=OLAK5uy_nTkPpeyc83R9Kt6M9PaGmyy59OHDa5ovQ',
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_nTkPpeyc83R9Kt6M9PaGmyy59OHDa5ovQ',
     youtubeMusic:
       'https://music.youtube.com/playlist?list=OLAK5uy_nQT0FMPii6bQHu7gPMH0Cu3X9kinOkYbU',
     yandexMusic: 'https://music.yandex.ru/album/3444132',

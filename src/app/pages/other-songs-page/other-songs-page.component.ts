@@ -1,16 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { ArtistService } from '../../services/artist.service';
 import artists from '../../../db';
-import { TypeItem, TypeItems, TypeSong } from '../../../db/types';
+import type { TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
 @Component({
   selector: 'app-other-songs-page',
-  standalone: true,
   imports: [RouterLink],
   templateUrl: './other-songs-page.component.html',
   styleUrl: './other-songs-page.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OtherSongsPageComponent implements OnInit {
   public artists: TypeItems = artists;

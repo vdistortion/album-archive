@@ -4,11 +4,7 @@ import { EnumAlbums, EnumSongs } from '../types';
 const song: TypeSong = {
   id: EnumSongs.tulovishchej,
   name: ['Туловищей'],
-  albums: [
-    EnumAlbums.tulovishche,
-    EnumAlbums.trahniNebo,
-    EnumAlbums.risunkiNaDushe,
-  ],
+  albums: [EnumAlbums.tulovishche, EnumAlbums.trahniNebo, EnumAlbums.risunkiNaDushe],
   text: `
 Что за песня без баяна?
 Что за счастье без стакана?

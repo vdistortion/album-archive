@@ -8,8 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/shmely/albums/2008_strahi.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/7biUa81AdYs3MZ44VKMJXr',
-    youtube:
-      'https://www.youtube.com/playlist?list=OLAK5uy_mP9ymhFypJA4WYW-baAVJ0yKUwGO0-M8g',
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_mP9ymhFypJA4WYW-baAVJ0yKUwGO0-M8g',
     youtubeMusic:
       'https://music.youtube.com/playlist?list=OLAK5uy_nXeF2ClIBVJ0TsyEbRNV7FoJFjjtssJUY',
     yandexMusic: 'https://music.yandex.ru/album/3444127',

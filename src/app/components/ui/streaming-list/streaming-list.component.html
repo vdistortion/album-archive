@@ -3,11 +3,7 @@
     @for (item of list; track item.link) {
       <li class="streaming-list__item" [title]="item.name">
         <a class="streaming-list__link" target="_blank" [href]="item.link">
-          <img
-            class="streaming-list__logo"
-            [src]="'./streaming/' + item.image"
-            [alt]="item.name"
-          />
+          <img class="streaming-list__logo" [src]="'./streaming/' + item.image" [alt]="item.name" />
         </a>
       </li>
     }

@@ -1,23 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { AlbumCardComponent } from '../../components/ui/album-card/album-card.component';
 import { StreamingListComponent } from '../../components/ui/streaming-list/streaming-list.component';
 import { ArtistService } from '../../services/artist.service';
 import artists from '../../../db';
-import {
-  TypeAlbum,
-  TypeItem,
-  TypeItems,
-  TypeStreaming,
-} from '../../../db/types';
+import type { TypeAlbum, TypeItem, TypeItems, TypeStreaming } from '../../../db/types';
 
 @Component({
   selector: 'app-artist-page',
-  standalone: true,
-  imports: [RouterLink, AlbumCardComponent, StreamingListComponent],
+  imports: [AlbumCardComponent, StreamingListComponent],
   templateUrl: './artist-page.component.html',
   styleUrl: './artist-page.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ArtistPageComponent implements OnInit {
   public artists: TypeItems = artists;

@@ -1,9 +1,4 @@
-import {
-  Countries,
-  TypeArtist,
-  TypeStructure,
-  TypeStructurePictures,
-} from '../../types';
+import { Countries, TypeArtist, TypeStructure, TypeStructurePictures } from '../../types';
 import { ArtistClass } from '../../artist.class';
 import albums from './albums';
 import songs from './songs';

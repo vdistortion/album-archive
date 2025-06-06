@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
@@ -8,16 +8,16 @@ import type { TypeItems } from '../../../db/types';
 
 @Component({
   selector: 'app-gallery-page',
-  standalone: true,
   imports: [PhotoGalleryModule],
   templateUrl: './gallery-page.component.html',
   styleUrl: './gallery-page.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GalleryPageComponent implements OnInit {
   public artists: TypeItems = artists;
-  protected pictures: string[];
-  protected path: string;
-  protected id: string;
+  protected pictures!: string[];
+  protected path!: string;
+  protected id!: string;
   protected galleryName: string = '';
   private artistName: string = '';
 
@@ -42,8 +42,6 @@ export class GalleryPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.titleService.setTitle(
-      `${this.artistName} | Фото | ${this.galleryName}`,
-    );
+    this.titleService.setTitle(`${this.artistName} | Фото | ${this.galleryName}`);
   }
 }

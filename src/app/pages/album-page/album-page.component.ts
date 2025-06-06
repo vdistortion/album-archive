@@ -1,26 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { StreamingListComponent } from '../../components/ui/streaming-list/streaming-list.component';
 import { ArtistService } from '../../services/artist.service';
 import { TrimPipe } from '../../trim.pipe';
 import artists from '../../../db';
-import { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
+import type { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
 @Component({
   selector: 'app-album-page',
-  standalone: true,
   imports: [RouterLink, TrimPipe, StreamingListComponent],
   templateUrl: './album-page.component.html',
   styleUrl: './album-page.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AlbumPageComponent implements OnInit {
   public artists: TypeItems = artists;
   public artistName: string = '';
   public artistId: string | null = null;
   public album: TypeAlbum | null = null;
-  public songs: (TypeSong | { name: string; id: string; duration: number })[] =
-    [];
+  public songs: (TypeSong | { name: string; id: string; duration: number })[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -60,9 +59,7 @@ export class AlbumPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.titleService.setTitle(
-      `${this.album?.name} (${this.album?.year}) | ${this.artistName}`,
-    );
+    this.titleService.setTitle(`${this.album?.name} (${this.album?.year}) | ${this.artistName}`);
   }
 
   getTime(duration: number): string {

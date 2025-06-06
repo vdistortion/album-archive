@@ -5,8 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.hHereGewalt,
   name: 'Höhere Gewalt',
   year: 2024,
-  folder:
-    '/artist/schwarzer_engel/albums/ab67616d0000b273e5231b3c5e3b0b1675908ad6.jpg',
+  folder: '/artist/schwarzer_engel/albums/ab67616d0000b273e5231b3c5e3b0b1675908ad6.jpg',
   songs: [
     { name: '100 Jahre' },
     { name: 'Einer Gegen Alle' },

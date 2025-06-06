@@ -8,8 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/shmely/albums/2010_balerina.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/0AoYg8ddVNIoismWBYv7jp',
-    youtube:
-      'https://www.youtube.com/playlist?list=OLAK5uy_lKAK6qxtulNpigAsSzglJMTDsX86CWRZg',
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_lKAK6qxtulNpigAsSzglJMTDsX86CWRZg',
     youtubeMusic:
       'https://music.youtube.com/playlist?list=OLAK5uy_kAfpmxC-5vpT_zMwug5HcuXsnFi4l41bo',
     yandexMusic: 'https://music.yandex.ru/album/3444129',

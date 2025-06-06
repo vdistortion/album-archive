@@ -4,11 +4,7 @@ import { EnumAlbums, EnumSongs } from '../types';
 const song: TypeSong = {
   id: EnumSongs.polnaSuma,
   name: ['Полна сума', 'Безлюдный остров'],
-  albums: [
-    EnumAlbums.bombaVUbezhishche,
-    EnumAlbums.organizm,
-    EnumAlbums.polnaSuma,
-  ],
+  albums: [EnumAlbums.bombaVUbezhishche, EnumAlbums.organizm, EnumAlbums.polnaSuma],
   text: `
 Полна сума лиха и пряников,
 Полон карман скорби по прошлому

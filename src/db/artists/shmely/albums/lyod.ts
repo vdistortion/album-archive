@@ -8,8 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/shmely/albums/2005_lyod.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/5pL8KLhjDalWkja1X7dKz9',
-    youtube:
-      'https://www.youtube.com/playlist?list=OLAK5uy_nXvdHxMP-aZmghtnw-vMDkh7MmjhHzMSc',
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_nXvdHxMP-aZmghtnw-vMDkh7MmjhHzMSc',
     youtubeMusic:
       'https://music.youtube.com/playlist?list=OLAK5uy_lNKOLD4k7WdPQm4mG-38CMnTtmV_Dd-rc',
     yandexMusic: 'https://music.yandex.ru/album/79313',

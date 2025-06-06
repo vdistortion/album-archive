@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { GalleryCardComponent } from '../../components/ui/gallery-card/gallery-card.component';
 import { ArtistService } from '../../services/artist.service';
@@ -8,10 +8,10 @@ import type { TypeItems, TypeStructurePictures } from '../../../db/types';
 
 @Component({
   selector: 'app-images-page',
-  standalone: true,
-  imports: [RouterLink, GalleryCardComponent],
+  imports: [GalleryCardComponent],
   templateUrl: './images-page.component.html',
   styleUrl: './images-page.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ImagesPageComponent implements OnInit {
   public artists: TypeItems = artists;

@@ -8,8 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/shmely/albums/2000_moshi.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/1xaIDZcBZLaXtnrsfg1Tbr',
-    youtube:
-      'https://www.youtube.com/playlist?list=OLAK5uy_mcpRAnZyTiyTLoYoZlOifD4WoKEopi6vs',
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_mcpRAnZyTiyTLoYoZlOifD4WoKEopi6vs',
     youtubeMusic:
       'https://music.youtube.com/playlist?list=OLAK5uy_mGUbrFjlAsspY8eHWwTpWm_7DAB7C5J1s',
     yandexMusic: 'https://music.yandex.ru/album/3444130',

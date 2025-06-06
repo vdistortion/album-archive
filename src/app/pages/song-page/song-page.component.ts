@@ -1,19 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { YouTubePlayer } from '@angular/youtube-player';
 import { Title } from '@angular/platform-browser';
 import { AlbumCardComponent } from '../../components/ui/album-card/album-card.component';
 import { ArtistService } from '../../services/artist.service';
 import { TrimPipe } from '../../trim.pipe';
 import artists from '../../../db';
-import { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
+import type { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
 
 @Component({
   selector: 'app-song-page',
-  standalone: true,
-  imports: [RouterLink, TrimPipe, YouTubePlayer, AlbumCardComponent],
+  imports: [TrimPipe, YouTubePlayer, AlbumCardComponent],
   templateUrl: './song-page.component.html',
   styleUrl: './song-page.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SongPageComponent implements OnInit {
   public artists: TypeItems = artists;

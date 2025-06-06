@@ -8,8 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/shmely/albums/2016_zo.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/4Q4riSrf2rdfmY6EllfbRp',
-    youtube:
-      'https://www.youtube.com/playlist?list=OLAK5uy_kf4b67Cf_KzFSmA1Ya-ptvWjGMmG9rfWs',
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_kf4b67Cf_KzFSmA1Ya-ptvWjGMmG9rfWs',
     youtubeMusic:
       'https://music.youtube.com/playlist?list=OLAK5uy_lEU8oxwMxMRJ8Qm8pCykRlxwEBZBbYlK0',
     yandexMusic: 'https://music.yandex.ru/album/3444126',

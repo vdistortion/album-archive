@@ -17,10 +17,7 @@ const album: TypeAlbum = {
     { name: 'Искушение (1999)' },
     EnumSongs.blagodat,
     EnumSongs.maneken,
-    [
-      EnumSongs.laboratoriyaAltruizma,
-      { name: ['Лаборатория альтруизма (new version)'] },
-    ],
+    [EnumSongs.laboratoriyaAltruizma, { name: ['Лаборатория альтруизма (new version)'] }],
     { name: 'День Святого Валентина' },
     { name: 'Отравленные боги' },
     [EnumSongs.slyoznaya, { name: ['Слёзная (remix)'] }],

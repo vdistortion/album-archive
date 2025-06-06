@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { ArtistService } from '../../services/artist.service';
 import artists from '../../../db';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
+  private cdr = inject(ChangeDetectorRef);
   artistId: string = '';
   artistName: string = '';
   isImages: boolean = false;
@@ -27,6 +28,8 @@ export class HeaderComponent {
       } else {
         this.artistName = '';
       }
+
+      this.cdr.markForCheck();
     });
   }
 }

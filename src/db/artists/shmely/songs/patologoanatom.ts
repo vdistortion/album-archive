@@ -4,11 +4,7 @@ import { EnumAlbums, EnumSongs } from '../types';
 const song: TypeSong = {
   id: EnumSongs.patologoanatom,
   name: ['Патологоанатом'],
-  albums: [
-    EnumAlbums.spazmyRoka,
-    EnumAlbums.risunkiNaDushe,
-    EnumAlbums.poshmelye,
-  ],
+  albums: [EnumAlbums.spazmyRoka, EnumAlbums.risunkiNaDushe, EnumAlbums.poshmelye],
   duration: 184,
   text: `
 Морфий, бинт и вата, –

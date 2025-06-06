@@ -8,8 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/shmely/albums/2011_teatr.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/40ou3ofmt60WN6Z1LXpF0p',
-    youtube:
-      'https://www.youtube.com/playlist?list=OLAK5uy_kziusKHBqOaVCF3vKxL1PcshlkPV1UU5U',
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_kziusKHBqOaVCF3vKxL1PcshlkPV1UU5U',
     youtubeMusic:
       'https://music.youtube.com/playlist?list=OLAK5uy_liV01e1JDnannkLWqdmM7BJv613aPj9Ws',
     yandexMusic: 'https://music.yandex.ru/album/3444134',

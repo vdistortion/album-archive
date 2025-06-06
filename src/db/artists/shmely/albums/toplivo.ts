@@ -8,8 +8,7 @@ const album: TypeAlbum = {
   folder: '/artist/shmely/albums/2010_toplivo.jpg',
   streaming: {
     spotify: 'https://open.spotify.com/album/0frmw2fWFkFtuoeobgciN8',
-    youtube:
-      'https://www.youtube.com/playlist?list=OLAK5uy_kkufNdmy_VwLed5KlwFD4q4LfGwmPF8JU',
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_kkufNdmy_VwLed5KlwFD4q4LfGwmPF8JU',
     youtubeMusic:
       'https://music.youtube.com/playlist?list=OLAK5uy_nFcLyMsmp6FHj0wt6J3w--1qXcmgyX_xY',
     yandexMusic: 'https://music.yandex.ru/album/3444135',

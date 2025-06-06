@@ -5,8 +5,7 @@ const album: TypeAlbum = {
   id: EnumAlbums.kreuzigetMich,
   name: 'Kreuziget Mich',
   year: 2020,
-  folder:
-    '/artist/schwarzer_engel/albums/ab67616d0000b273935373b24567b4b384e28f9f.jpg',
+  folder: '/artist/schwarzer_engel/albums/ab67616d0000b273935373b24567b4b384e28f9f.jpg',
   songs: [
     EnumSongs.kreuzigetMich,
     EnumSongs.teufel,
