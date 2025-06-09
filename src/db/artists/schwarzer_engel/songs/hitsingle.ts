@@ -5,6 +5,7 @@ const song: TypeSong = {
   id: EnumSongs.hitsingle,
   name: ['Hitsingle'],
   albums: [EnumAlbums.hHereGewalt],
+  clipYouTubeId: 'UrAuIsKTB4M',
   text: `
 Im Radio, auf Rotation,
 In Endlosschleife läuft sie schon,
@@ -27,7 +28,7 @@ Und alle tanzen mit!
 Im tiefen Schlaf verfolgt sie dich,
 Ein Ohrwurm, mein Geschenk an dich,
 Und lauschst du ihr auch nur geheim,
-Gib\\\\\\'s zu, auch du findest sie geil,
+Gib\'s zu, auch du findest sie geil,
 Sie krallt sich fest und beißt sich ein,
 Sie wird ein Teil in jedem Heim,
 Der Rhythmus fährt in Mark und Bein,
