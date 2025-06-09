@@ -1,12 +1,12 @@
 {
-  "name": "album-archive",
+  "name": "nebuloud",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "public": "ng build --base-href /album-archive/ && cd dist/album-archive/browser && cp index.html 404.html && gh-pages -d .",
+    "public": "ng build --base-href /nebuloud/ && cd dist/nebuloud/browser && cp index.html 404.html && gh-pages -d .",
     "test": "ng test",
     "format": "prettier . --write"
   },

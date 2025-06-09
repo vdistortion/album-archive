@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "album-archive": {
+    "nebuloud": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -80,10 +80,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "album-archive:build:production"
+              "buildTarget": "nebuloud:build:production"
             },
             "development": {
-              "buildTarget": "album-archive:build:development"
+              "buildTarget": "nebuloud:build:development"
             }
           },
           "defaultConfiguration": "development"
