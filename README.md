@@ -1,5 +1,7 @@
 # nebuloud
 
+[![logo](./public/logo.webp)](https://vdistortion.github.io/nebuloud/)
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 
 ## Development server
