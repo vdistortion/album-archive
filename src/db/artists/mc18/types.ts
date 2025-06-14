@@ -51,5 +51,5 @@ export const enum EnumSongs {
   kakPitDat = 'kak-pit-dat',
   kamen = 'kamen',
   zaMirIlyubov = 'za-mir-i-lyubov',
-  tropinka = 'tropinka'
+  tropinka = 'tropinka',
 }

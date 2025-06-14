@@ -27,7 +27,7 @@ import { song as kolesnica } from './kolesnica';
 import { song as absolyut } from './absolyut';
 import { song as kakPitDat } from './kak-pit-dat';
 import { song as kamen } from './kamen';
-import {song as zaMirIlyubov } from './za-mir-i-lyubov';
+import { song as zaMirIlyubov } from './za-mir-i-lyubov';
 import { song as tropinka } from './tropinka';
 
 export default {
@@ -61,5 +61,5 @@ export default {
   [kakPitDat.id]: kakPitDat,
   [kamen.id]: kamen,
   [zaMirIlyubov.id]: zaMirIlyubov,
-  [tropinka.id]: tropinka
-}
+  [tropinka.id]: tropinka,
+};

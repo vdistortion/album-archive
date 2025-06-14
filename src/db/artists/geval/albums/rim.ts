@@ -6,11 +6,7 @@ const album: TypeAlbum = {
   name: 'Третий Рим',
   year: 2010,
   folder: '/artist/geval/albums/3.webp',
-  songs: [
-    EnumSongs.tretijRim,
-    EnumSongs.pechatZverya,
-    EnumSongs.labirint,
-  ],
+  songs: [EnumSongs.tretijRim, EnumSongs.pechatZverya, EnumSongs.labirint],
   info: `
   `,
 };

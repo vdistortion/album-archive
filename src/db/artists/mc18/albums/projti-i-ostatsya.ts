@@ -6,9 +6,7 @@ export const album: TypeAlbum = {
   name: 'Пройти и остаться',
   year: 2017,
   folder: '/artist/mc18/albums/ab67616d0000b27347108e14f123eb047cf98bf8.webp',
-  songs: [
-    EnumSongs.projtiIostatsya
-  ],
+  songs: [EnumSongs.projtiIostatsya],
   info: `
   `,
 };

@@ -6,9 +6,7 @@ export const album: TypeAlbum = {
   name: 'Солнце',
   year: 2020,
   folder: '/artist/mc18/albums/ab67616d0000b273ecf5b42c00c7aa6a433f091a.webp',
-  songs: [
-    EnumSongs.solnce
-  ],
+  songs: [EnumSongs.solnce],
   info: `
   `,
 };

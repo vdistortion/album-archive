@@ -72,4 +72,4 @@ export default {
   [vojna.id]: vojna,
   [volki.id]: volki,
   [zver.id]: zver,
-}
+};

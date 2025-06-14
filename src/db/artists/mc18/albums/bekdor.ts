@@ -6,9 +6,7 @@ export const album: TypeAlbum = {
   name: 'Бэкдор',
   year: 2018,
   folder: '/artist/mc18/albums/ab67616d0000b2736b658a529d0c7a8a0baadb4b.webp',
-  songs: [
-    EnumSongs.bekdor
-  ],
+  songs: [EnumSongs.bekdor],
   info: `
   `,
 };

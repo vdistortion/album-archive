@@ -6,12 +6,7 @@ export const album: TypeAlbum = {
   name: 'Колесница',
   year: 2020,
   folder: '/artist/mc18/albums/ab67616d0000b2737a29347cc4947415e5b650fc.webp',
-  songs: [
-    EnumSongs.kolesnica,
-    EnumSongs.absolyut,
-    EnumSongs.kakPitDat,
-    EnumSongs.kamen
-  ],
+  songs: [EnumSongs.kolesnica, EnumSongs.absolyut, EnumSongs.kakPitDat, EnumSongs.kamen],
   info: `
   `,
 };

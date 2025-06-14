@@ -6,9 +6,7 @@ export const album: TypeAlbum = {
   name: 'Пламя',
   year: 2019,
   folder: '/artist/mc18/albums/ab67616d0000b273a2a06d092eb227b83a8e3023.webp',
-  songs: [
-    EnumSongs.plamya
-  ],
+  songs: [EnumSongs.plamya],
   info: `
   `,
 };

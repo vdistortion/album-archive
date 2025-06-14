@@ -6,9 +6,7 @@ export const album: TypeAlbum = {
   name: 'Дама черви',
   year: 2017,
   folder: '/artist/mc18/albums/ab67616d0000b273e89b354ef237ff5d7b84771b.webp',
-  songs: [
-    EnumSongs.damaChervi
-  ],
+  songs: [EnumSongs.damaChervi],
   info: `
   `,
 };

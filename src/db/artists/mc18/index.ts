@@ -30,7 +30,7 @@ const artist: TypeArtist = {
     EnumAlbums.chetyreK,
     EnumAlbums.solnce,
     EnumAlbums.kolesnica,
-    EnumAlbums.zaMirIlyubov
+    EnumAlbums.zaMirIlyubov,
   ],
 };
 

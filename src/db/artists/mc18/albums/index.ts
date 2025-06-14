@@ -11,7 +11,7 @@ import { album as kolesnica } from './kolesnica';
 import { album as lyudiHaosa } from './lyudi-haosa';
 import { album as projtiIostatsya } from './projti-i-ostatsya';
 import { album as ubivayaMolodost } from './ubivaya-molodost';
-import {album as zaMirIlyubov } from './za-mir-i-lyubov';
+import { album as zaMirIlyubov } from './za-mir-i-lyubov';
 
 export default {
   [plamya.id]: plamya,
@@ -28,4 +28,4 @@ export default {
   [projtiIostatsya.id]: projtiIostatsya,
   [ubivayaMolodost.id]: ubivayaMolodost,
   [zaMirIlyubov.id]: zaMirIlyubov,
-}
+};

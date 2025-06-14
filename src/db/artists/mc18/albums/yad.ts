@@ -6,9 +6,7 @@ export const album: TypeAlbum = {
   name: 'Яд',
   year: 2018,
   folder: '/artist/mc18/albums/ab67616d0000b2739d9d257b375ffc3fac615aa9.webp',
-  songs: [
-    EnumSongs.yad
-  ],
+  songs: [EnumSongs.yad],
   info: `
   `,
 };

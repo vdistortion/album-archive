@@ -14,7 +14,7 @@ export const album: TypeAlbum = {
     EnumSongs.dokumentalnoeKino,
     EnumSongs.nikakihOzhidanij,
     EnumSongs.kajros,
-    EnumSongs.doVremennojParkovki
+    EnumSongs.doVremennojParkovki,
   ],
   info: `
   `,

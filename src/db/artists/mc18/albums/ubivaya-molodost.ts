@@ -6,9 +6,7 @@ export const album: TypeAlbum = {
   name: 'Убивая молодость',
   year: 2017,
   folder: '/artist/mc18/albums/ab67616d0000b2730971055d02d3b6e1ba25ce0a.webp',
-  songs: [
-    EnumSongs.ubivayaMolodost
-  ],
+  songs: [EnumSongs.ubivayaMolodost],
   info: `
   `,
 };

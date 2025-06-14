@@ -14,7 +14,7 @@ export const album: TypeAlbum = {
     EnumSongs.vBetonnyhBashnyah,
     EnumSongs.sekta,
     EnumSongs.lishnij,
-    EnumSongs.vmesteSoMnoj
+    EnumSongs.vmesteSoMnoj,
   ],
   info: `
   `,
