@@ -1,7 +1,7 @@
 import { TypeSong } from '../../../types';
 import { EnumSongs } from '../types';
 
-const song: TypeSong = {
+export const song: TypeSong = {
   id: EnumSongs.tropinka,
   name: ['Тропинка'],
   albums: [],
@@ -68,5 +68,3 @@ const song: TypeSong = {
 Бросаю тачку на шоссе и опять по тропинке
 `,
 };
-
-export default song;

@@ -2,7 +2,7 @@ import { Countries, TypeArtist } from '../../types';
 import { ArtistClass } from '../../artist.class';
 import albums from './albums';
 import songs from './songs';
-import { EnumArtist } from './types';
+import { EnumAlbums, EnumArtist } from './types';
 
 const artist: TypeArtist = {
   id: EnumArtist.id,
@@ -16,7 +16,22 @@ const artist: TypeArtist = {
     youtube: 'https://www.youtube.com/channel/UC8og8oz94f_chm3n-DdAyBw',
     yandexMusic: 'https://music.yandex.ru/artist/3095203',
   },
-  albums: [],
+  albums: [
+    EnumAlbums.pochtiFantastika,
+    EnumAlbums.lyudiHaosa,
+    EnumAlbums.projtiIostatsya,
+    EnumAlbums.damaChervi,
+    EnumAlbums.ubivayaMolodost,
+    EnumAlbums.bekdor,
+    EnumAlbums.akval,
+    EnumAlbums.yad,
+    EnumAlbums.chuzhim,
+    EnumAlbums.plamya,
+    EnumAlbums.chetyreK,
+    EnumAlbums.solnce,
+    EnumAlbums.kolesnica,
+    EnumAlbums.zaMirIlyubov
+  ],
 };
 
 class Artist extends ArtistClass {
