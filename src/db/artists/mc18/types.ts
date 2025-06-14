@@ -21,7 +21,9 @@ export const enum EnumAlbums {
 }
 
 export const enum EnumSongs {
+  zdesIsejchas = 'zdes-i-sejchas',
   pochtiFantastika = 'pochti-fantastika',
+  dom = 'dom',
   damaChervi = 'dama-chervi',
   chuzhim = 'chuzhim',
   yad = 'yad',

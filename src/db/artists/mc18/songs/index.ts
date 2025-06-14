@@ -1,4 +1,6 @@
+import { song as zdesIsejchas } from './zdes-i-sejchas';
 import { song as pochtiFantastika } from './pochti-fantastika';
+import { song as dom } from './dom';
 import { song as damaChervi } from './dama-chervi';
 import { song as chuzhim } from './chuzhim';
 import { song as yad } from './yad';
@@ -31,7 +33,9 @@ import { song as zaMirIlyubov } from './za-mir-i-lyubov';
 import { song as tropinka } from './tropinka';
 
 export default {
+  [zdesIsejchas.id]: zdesIsejchas,
   [pochtiFantastika.id]: pochtiFantastika,
+  [dom.id]: dom,
   [damaChervi.id]: damaChervi,
   [chuzhim.id]: chuzhim,
   [yad.id]: yad,
