@@ -5,7 +5,7 @@ import { StreamingListComponent } from '../../components/ui/streaming-list/strea
 import { ArtistService } from '../../services/artist.service';
 import { TrimPipe } from '../../trim.pipe';
 import artists from '../../../db';
-import type { TypeAlbum, TypeItem, TypeItems, TypeSong } from '../../../db/types';
+import type { TypeAlbum, TypeItem, TypeItems } from '../../../db/types';
 
 @Component({
   selector: 'app-album-page',
@@ -19,7 +19,7 @@ export class AlbumPageComponent implements OnInit {
   public artistName: string = '';
   public artistId: string | null = null;
   public album: TypeAlbum | null = null;
-  public songs: (TypeSong | { name: string; id: string; duration: number })[] = [];
+  public songs: { name: string; id: string; duration: number; isText: boolean }[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -43,6 +43,7 @@ export class AlbumPageComponent implements OnInit {
           id: song.id,
           name: song.name[0],
           duration: song.duration ?? 0,
+          isText: !!song.text.trim(),
         };
       }
       if (Array.isArray(songId)) {
@@ -52,9 +53,10 @@ export class AlbumPageComponent implements OnInit {
           id,
           name: name[0],
           duration: song.duration ?? 0,
+          isText: !!song.text.trim(),
         };
       }
-      return { name: songId.name, id: '', duration: 0 };
+      return { name: songId.name, id: '', duration: 0, isText: false };
     });
   }
 

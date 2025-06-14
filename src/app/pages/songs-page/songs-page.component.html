@@ -13,7 +13,10 @@
       <div class="songs-page__item">
         <div class="songs-page__song">
           {{ i + 1 }}.
-          <a [routerLink]="'/artist/' + artistId + '/song/' + song.id">
+          <a
+            [class.error]="!song.text.trim()"
+            [routerLink]="'/artist/' + artistId + '/song/' + song.id"
+          >
             {{ song.name[0] }}
           </a>
         </div>

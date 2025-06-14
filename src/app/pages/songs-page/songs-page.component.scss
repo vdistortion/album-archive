@@ -18,6 +18,10 @@
       margin-left: 5px;
       text-decoration: none;
       border-bottom: 1px solid var(--hover-text);
+
+      &.error {
+        text-decoration: line-through;
+      }
     }
   }
 }
